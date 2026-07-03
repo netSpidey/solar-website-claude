@@ -11,6 +11,7 @@ export default defineNuxtConfig({
 
   app: {
     baseURL,
+    buildAssetsDir: '_nuxt/',
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       titleTemplate: '%s | Suryoday Solar Nashik',

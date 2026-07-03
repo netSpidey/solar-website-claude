@@ -29,6 +29,11 @@ jobs:
         env:
           NUXT_APP_BASE_URL: /solar-website-claude/
 
+      - name: Verify GitHub Pages asset paths
+        run: |
+          grep -R 'buildAssetsDir:"/_nuxt/"' .output/public && exit 1 || true
+          grep -R 'href="/_nuxt\|src="/_nuxt' .output/public && exit 1 || true
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
