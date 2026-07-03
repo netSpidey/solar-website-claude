@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero" :style="heroStyle">
     <v-container class="py-10 py-md-16">
       <v-row align="center" class="ga-0">
         <v-col cols="12" md="7" class="pr-md-8">
@@ -44,6 +44,10 @@
 import { companyInfo } from '~/data/nav'
 
 const phoneHref = `tel:${companyInfo.phone.replace(/\s+/g, '')}`
+const baseURL = useRuntimeConfig().app.baseURL
+const heroStyle = {
+  backgroundImage: `linear-gradient(120deg, rgba(11, 31, 58, 0.94) 0%, rgba(11, 31, 58, 0.88) 45%, rgba(11, 31, 58, 0.65) 100%), url('${baseURL}assets/images/hero/hero-solar-home.jpg')`,
+}
 
 const trustPoints = [
   'Free Site Survey',
@@ -56,9 +60,6 @@ const trustPoints = [
 .hero {
   position: relative;
   overflow: hidden;
-  background-image:
-    linear-gradient(120deg, rgba(11, 31, 58, 0.94) 0%, rgba(11, 31, 58, 0.88) 45%, rgba(11, 31, 58, 0.65) 100%),
-    url('/assets/images/hero/hero-solar-home.jpg');
   background-size: cover;
   background-position: center;
 

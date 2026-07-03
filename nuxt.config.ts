@@ -1,6 +1,8 @@
 import { fileURLToPath } from 'node:url'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
+const baseURL = process.env.NUXT_APP_BASE_URL || '/'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-08-01',
@@ -8,6 +10,7 @@ export default defineNuxtConfig({
   ssr: true,
 
   app: {
+    baseURL,
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       titleTemplate: '%s | Suryoday Solar Nashik',
@@ -21,7 +24,7 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/assets/favicon.svg' },
+        { rel: 'icon', type: 'image/svg+xml', href: `${baseURL}assets/favicon.svg` },
       ],
     },
   },
