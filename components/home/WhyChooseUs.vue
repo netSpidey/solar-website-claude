@@ -1,0 +1,29 @@
+<template>
+  <section class="section-py" style="background: #F8F9FA">
+    <v-container>
+      <CommonSectionHeading
+        eyebrow="Why Choose Us"
+        title="Built on Trust, Backed by Experience"
+        subtitle="We make going solar simple, transparent, and hassle-free from day one."
+        center
+        max-width="640px"
+      />
+
+      <v-row class="mt-8">
+        <v-col v-for="(item, i) in whyChooseUs" :key="item.title" cols="12" sm="6" md="4">
+          <CommonRevealOnScroll :delay="i * 70">
+            <v-card class="pa-6 h-100 hover-lift" elevation="0" rounded="xl" style="border: 1px solid rgba(11,31,58,0.08)">
+              <v-icon :icon="item.icon" color="secondary" size="32" class="mb-4" />
+              <h3 class="text-subtitle-1 font-weight-bold mb-2" style="color: #0B1F3A">{{ item.title }}</h3>
+              <p class="text-body-2 mb-0" style="color: #616161">{{ item.description }}</p>
+            </v-card>
+          </CommonRevealOnScroll>
+        </v-col>
+      </v-row>
+    </v-container>
+  </section>
+</template>
+
+<script setup lang="ts">
+import { whyChooseUs } from '~/data/stats'
+</script>
