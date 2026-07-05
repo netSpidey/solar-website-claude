@@ -3,12 +3,12 @@
     <v-container>
       <div class="d-flex flex-column flex-md-row justify-space-between align-md-end mb-2">
         <CommonSectionHeading
-          eyebrow="Our Work"
-          title="Recent Solar Installations"
-          subtitle="A glimpse of rooftop and ground-mount projects completed across Nashik."
+          :eyebrow="t('sections.workEyebrow')"
+          :title="t('sections.workTitle')"
+          :subtitle="t('sections.workSubtitle')"
         />
-        <v-btn variant="text" color="secondary" append-icon="mdi-arrow-right" to="/projects" class="mb-6">
-          View All Projects
+        <v-btn variant="text" color="secondary" append-icon="mdi-arrow-right" :to="localePath('/projects')" class="mb-6">
+          {{ t('common.viewAllProjects') }}
         </v-btn>
       </div>
 
@@ -24,7 +24,9 @@
 </template>
 
 <script setup lang="ts">
-import { projects } from '~/data/projects'
+const { t } = useI18n()
+const localePath = useLocalePath()
+const { projects } = useLocalizedContent()
 
-const previewProjects = projects.slice(0, 3)
+const previewProjects = computed(() => projects.value.slice(0, 3))
 </script>

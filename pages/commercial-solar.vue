@@ -12,7 +12,7 @@
             <v-img :src="service?.image" alt="Commercial rooftop solar installation" rounded="xl" cover height="420" />
           </v-col>
           <v-col cols="12" md="6" class="pl-md-10 mt-8 mt-md-0">
-            <h2 class="text-h4 font-weight-bold" style="color: #0B1F3A">Solar That Pays for Itself</h2>
+            <h2 class="text-h4 font-weight-bold" style="color: #0B1F3A">{{ t('pages.commercial.detailTitle') }}</h2>
             <p class="text-body-1 mt-4" style="color: #616161">{{ service?.description }}</p>
             <v-list class="mt-2 bg-transparent">
               <v-list-item v-for="feature in service?.features" :key="feature" class="px-0">
@@ -22,8 +22,8 @@
                 <v-list-item-title class="text-body-2">{{ feature }}</v-list-item-title>
               </v-list-item>
             </v-list>
-            <v-btn color="accent" size="large" class="text-deep-navy mt-4" to="/contact" prepend-icon="mdi-calendar-check-outline">
-              Request a Business Quote
+            <v-btn color="accent" size="large" class="text-deep-navy mt-4" :to="localePath('/contact')" prepend-icon="mdi-calendar-check-outline">
+              {{ t('pages.commercial.cta') }}
             </v-btn>
           </v-col>
         </v-row>
@@ -68,11 +68,12 @@
 </template>
 
 <script setup lang="ts">
-import { getServiceBySlug } from '~/data/services'
-import { projects } from '~/data/projects'
+const { t } = useI18n()
+const localePath = useLocalePath()
+const { getServiceBySlug, projects } = useLocalizedContent()
 
 const service = getServiceBySlug('commercial-solar')
-const commercialProjects = projects.filter((p) => p.propertyType === 'Commercial')
+const commercialProjects = computed(() => projects.value.filter((p) => p.propertyType === 'Commercial'))
 
 const segments = [
   { title: 'Retail Showrooms', icon: 'mdi-store-outline' },

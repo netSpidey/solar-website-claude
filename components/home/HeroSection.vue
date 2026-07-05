@@ -4,23 +4,22 @@
       <v-row align="center" class="ga-0">
         <v-col cols="12" md="7" class="pr-md-8">
           <v-chip color="accent" variant="flat" size="small" class="mb-4 font-weight-bold">
-            #1 Solar Installer in Nashik
+            {{ t('hero.badge') }}
           </v-chip>
           <h1 class="text-h3 text-md-h2 font-weight-bold text-white" style="line-height: 1.15">
-            Power Your Home with
-            <span class="text-gradient-solar">Clean Solar Energy</span>
+            {{ t('hero.titlePrefix') }}
+            <span class="text-gradient-solar">{{ t('hero.titleHighlight') }}</span>
           </h1>
           <p class="text-body-1 text-md-h6 font-weight-regular text-white opacity-80 mt-5" style="max-width: 560px">
-            Save up to 90% on electricity bills with professionally installed rooftop solar
-            systems in Nashik.
+            {{ t('hero.subtitle') }}
           </p>
 
           <div class="d-flex flex-wrap ga-3 mt-8">
             <v-btn color="accent" size="x-large" class="text-deep-navy" prepend-icon="mdi-calculator-variant-outline" to="#savings-calculator">
-              Calculate Your Savings
+              {{ t('hero.calculate') }}
             </v-btn>
             <v-btn color="white" variant="outlined" size="x-large" prepend-icon="mdi-phone-outline" :href="phoneHref">
-              Talk to an Expert
+              {{ t('hero.expert') }}
             </v-btn>
           </div>
 
@@ -43,17 +42,14 @@
 <script setup lang="ts">
 import { companyInfo } from '~/data/nav'
 
+const { t, tm } = useI18n()
 const phoneHref = `tel:${companyInfo.phone.replace(/\s+/g, '')}`
 const baseURL = useRuntimeConfig().app.baseURL
 const heroStyle = {
   backgroundImage: `linear-gradient(120deg, rgba(11, 31, 58, 0.94) 0%, rgba(11, 31, 58, 0.88) 45%, rgba(11, 31, 58, 0.65) 100%), url('${baseURL}assets/images/hero/hero-solar-home.jpg')`,
 }
 
-const trustPoints = [
-  'Free Site Survey',
-  'Govt. Subsidy Assistance',
-  '25-Year Warranty',
-]
+const trustPoints = computed(() => tm('hero.trust') as string[])
 </script>
 
 <style scoped lang="scss">

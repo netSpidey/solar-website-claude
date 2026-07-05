@@ -9,7 +9,7 @@
         cover
       />
       <v-chip class="project-card__chip" color="accent" size="small" variant="flat" style="color: #0B1F3A">
-        {{ project.propertyType }}
+        {{ translateCategory(project.propertyType) }}
       </v-chip>
     </div>
     <v-card-item>
@@ -22,11 +22,11 @@
     <v-card-text class="pt-0">
       <v-row dense class="mt-1">
         <v-col cols="6">
-          <div class="text-caption" style="color: #9e9e9e">System Size</div>
+          <div class="text-caption" style="color: #9e9e9e">{{ t('common.systemSize') }}</div>
           <div class="text-body-2 font-weight-bold">{{ project.systemSize }}</div>
         </v-col>
         <v-col cols="6">
-          <div class="text-caption" style="color: #9e9e9e">Est. Savings</div>
+          <div class="text-caption" style="color: #9e9e9e">{{ t('common.estSavings') }}</div>
           <div class="text-body-2 font-weight-bold" style="color: #43A047">{{ project.estimatedSavings }}</div>
         </v-col>
       </v-row>
@@ -38,6 +38,8 @@
 import type { ProjectItem } from '~/data/types'
 
 defineProps<{ project: ProjectItem }>()
+const { t } = useI18n()
+const { translateCategory } = useLocalizedContent()
 </script>
 
 <style scoped lang="scss">

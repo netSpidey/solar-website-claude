@@ -2,9 +2,9 @@
   <section class="section-py" style="background: #FFFFFF">
     <v-container>
       <CommonSectionHeading
-        eyebrow="How It Works"
-        title="Your Solar Installation Journey"
-        subtitle="A simple, guided process from first call to full power generation."
+        :eyebrow="t('sections.processEyebrow')"
+        :title="t('sections.processTitle')"
+        :subtitle="t('sections.processSubtitle')"
         center
         max-width="640px"
       />
@@ -16,7 +16,7 @@
               <div class="timeline-step__circle mx-auto mb-3">
                 <v-icon :icon="step.icon" color="deep-navy" size="26" />
               </div>
-              <div class="text-caption font-weight-bold mb-1" style="color: #FFC107">STEP {{ step.step }}</div>
+              <div class="text-caption font-weight-bold mb-1" style="color: #FFC107">{{ t('common.step') }} {{ step.step }}</div>
               <h3 class="text-body-1 font-weight-bold mb-1" style="color: #0B1F3A">{{ step.title }}</h3>
               <p class="text-caption mb-0" style="color: #616161">{{ step.description }}</p>
             </div>
@@ -28,7 +28,8 @@
 </template>
 
 <script setup lang="ts">
-import { processSteps } from '~/data/process'
+const { t } = useI18n()
+const { processSteps } = useLocalizedContent()
 </script>
 
 <style scoped lang="scss">

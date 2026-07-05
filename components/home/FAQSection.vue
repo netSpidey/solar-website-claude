@@ -2,9 +2,9 @@
   <section class="section-py" style="background: #F8F9FA">
     <v-container>
       <CommonSectionHeading
-        eyebrow="FAQs"
-        title="Frequently Asked Questions"
-        subtitle="Quick answers to the questions we hear most often about going solar in Nashik."
+        :eyebrow="t('sections.faqEyebrow')"
+        :title="t('sections.faqTitle')"
+        :subtitle="t('sections.faqSubtitle')"
         center
         max-width="640px"
       />
@@ -19,8 +19,8 @@
           </v-expansion-panels>
 
           <div class="text-center mt-6">
-            <v-btn variant="text" color="secondary" append-icon="mdi-arrow-right" to="/faqs">
-              View All FAQs
+            <v-btn variant="text" color="secondary" append-icon="mdi-arrow-right" :to="localePath('/faqs')">
+              {{ t('common.viewAllFaqs') }}
             </v-btn>
           </div>
         </v-col>
@@ -30,9 +30,11 @@
 </template>
 
 <script setup lang="ts">
-import { faqs } from '~/data/faqs'
+const { t } = useI18n()
+const localePath = useLocalePath()
+const { faqs } = useLocalizedContent()
 
-const previewFaqs = faqs.slice(0, 6)
+const previewFaqs = computed(() => faqs.value.slice(0, 6))
 </script>
 
 <style scoped lang="scss">

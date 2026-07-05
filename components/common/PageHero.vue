@@ -23,9 +23,11 @@ const props = defineProps<{
 }>()
 
 const breadcrumbs = computed(() => [
-  { title: 'Home', to: '/' },
+  { title: t('common.home'), to: localePath('/') },
   { title: props.title, disabled: true },
 ])
+const { t } = useI18n()
+const localePath = useLocalePath()
 </script>
 
 <style scoped lang="scss">

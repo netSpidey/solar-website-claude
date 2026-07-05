@@ -2,16 +2,15 @@
   <section class="final-cta bg-navy-gradient">
     <v-container class="py-12 py-md-16 text-center">
       <h2 class="text-h4 text-md-h3 font-weight-bold text-white mx-auto" style="max-width: 640px">
-        Ready to Reduce Your Electricity Bill?
+        {{ t('sections.finalTitle') }}
       </h2>
       <p class="text-body-1 text-white opacity-80 mt-4 mx-auto" style="max-width: 520px">
-        Get a free, no-obligation site survey and personalised solar quote from Nashik's trusted
-        installation experts.
+        {{ t('sections.finalSubtitle') }}
       </p>
 
       <div class="d-flex flex-wrap justify-center ga-3 mt-8">
-        <v-btn color="accent" size="x-large" class="text-deep-navy" prepend-icon="mdi-calculator-variant-outline" to="/contact">
-          Get Free Quote
+        <v-btn color="accent" size="x-large" class="text-deep-navy" prepend-icon="mdi-calculator-variant-outline" :to="localePath('/contact')">
+          {{ t('common.getFreeQuote') }}
         </v-btn>
         <v-btn
           color="success"
@@ -22,7 +21,7 @@
           target="_blank"
           rel="noopener"
         >
-          Chat on WhatsApp
+          {{ t('common.chatWhatsapp') }}
         </v-btn>
       </div>
     </v-container>
@@ -31,4 +30,7 @@
 
 <script setup lang="ts">
 import { companyInfo } from '~/data/nav'
+
+const { t } = useI18n()
+const localePath = useLocalePath()
 </script>

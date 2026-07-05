@@ -2,9 +2,9 @@
   <section class="section-py" style="background: #F8F9FA">
     <v-container>
       <CommonSectionHeading
-        eyebrow="Why Choose Us"
-        title="Built on Trust, Backed by Experience"
-        subtitle="We make going solar simple, transparent, and hassle-free from day one."
+        :eyebrow="t('sections.whyEyebrow')"
+        :title="t('sections.whyTitle')"
+        :subtitle="t('sections.whySubtitle')"
         center
         max-width="640px"
       />
@@ -25,5 +25,6 @@
 </template>
 
 <script setup lang="ts">
-import { whyChooseUs } from '~/data/stats'
+const { t } = useI18n()
+const { whyChooseUs } = useLocalizedContent()
 </script>
