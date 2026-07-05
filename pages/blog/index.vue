@@ -9,7 +9,7 @@
       <v-container>
         <v-row>
           <v-col v-for="post in blogPosts" :key="post.slug" cols="12" sm="6" md="4">
-            <NuxtLink :to="`/blog/${post.slug}`" class="text-decoration-none">
+            <NuxtLink :to="localePath(`/blog/${post.slug}`)" class="text-decoration-none">
               <v-card class="h-100 hover-lift" elevation="1" rounded="xl">
                 <v-img :src="post.image" :alt="post.title" height="200" cover />
                 <v-card-item>
@@ -40,6 +40,8 @@
 
 <script setup lang="ts">
 import { blogPosts } from '~/data/blog'
+
+const localePath = useLocalePath()
 
 function formatDate(date: string) {
   return new Date(date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })

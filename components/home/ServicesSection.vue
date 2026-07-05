@@ -2,9 +2,9 @@
   <section class="section-py" style="background: #F8F9FA">
     <v-container>
       <CommonSectionHeading
-        eyebrow="Our Services"
-        title="Complete Solar Solutions Under One Roof"
-        subtitle="From homes to factories, we design, install, and maintain solar systems tailored to your energy needs."
+        :eyebrow="t('sections.servicesEyebrow')"
+        :title="t('sections.servicesTitle')"
+        :subtitle="t('sections.servicesSubtitle')"
         center
         max-width="640px"
       />
@@ -21,5 +21,6 @@
 </template>
 
 <script setup lang="ts">
-import { services } from '~/data/services'
+const { t } = useI18n()
+const { services } = useLocalizedContent()
 </script>

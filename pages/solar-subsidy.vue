@@ -78,7 +78,7 @@
               center
             />
             <div class="text-center mt-6">
-              <v-btn color="secondary" size="large" to="/solar-water-pump" prepend-icon="mdi-water-pump">
+              <v-btn color="secondary" size="large" :to="localePath('/solar-water-pump')" prepend-icon="mdi-water-pump">
                 Learn About Solar Water Pumps
               </v-btn>
             </div>
@@ -93,6 +93,8 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath()
+
 const subsidySlabs = [
   { capacity: 'Up to 1 kW', subsidy: '₹30,000' },
   { capacity: '2 kW', subsidy: '₹60,000' },

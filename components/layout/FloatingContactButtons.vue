@@ -9,7 +9,7 @@
       size="56"
       class="floating-btn floating-btn--whatsapp"
       elevation="6"
-      aria-label="Chat on WhatsApp"
+      :aria-label="t('common.chatWhatsapp')"
     />
     <v-btn
       :href="phoneHref"
@@ -18,7 +18,7 @@
       size="48"
       class="floating-btn floating-btn--call d-md-none"
       elevation="6"
-      aria-label="Call us now"
+      :aria-label="t('common.callNow')"
     />
   </div>
 </template>
@@ -27,6 +27,7 @@
 import { companyInfo } from '~/data/nav'
 
 const phoneHref = `tel:${companyInfo.phone.replace(/\s+/g, '')}`
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">

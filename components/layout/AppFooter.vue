@@ -3,10 +3,9 @@
     <v-container>
       <v-row>
         <v-col cols="12" md="4">
-          <img src="/assets/images/logo.svg" alt="Suryoday Solar Nashik logo" height="40" class="mb-4 footer-logo" />
+          <img src="/assets/images/logo.svg" :alt="`${companyInfo.name} logo`" height="40" class="mb-4 footer-logo" />
           <p class="text-body-2 text-white opacity-80 mb-4">
-            {{ companyInfo.name }} designs and installs premium rooftop solar systems for homes,
-            businesses, and industries across Nashik, Maharashtra.
+            {{ t('company.footerAbout') }}
           </p>
           <div class="d-flex ga-2">
             <v-btn
@@ -25,29 +24,29 @@
         </v-col>
 
         <v-col cols="6" md="2">
-          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">Services</h3>
+          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">{{ t('footer.services') }}</h3>
           <ul class="footer-list">
             <li v-for="service in services" :key="service.slug">
-              <NuxtLink :to="`/${service.slug}`" class="footer-link">{{ service.title }}</NuxtLink>
+              <NuxtLink :to="localePath(`/${service.slug}`)" class="footer-link">{{ service.title }}</NuxtLink>
             </li>
           </ul>
         </v-col>
 
         <v-col cols="6" md="2">
-          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">Quick Links</h3>
+          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">{{ t('footer.quickLinks') }}</h3>
           <ul class="footer-list">
-            <li v-for="link in mainNav" :key="link.to">
-              <NuxtLink :to="link.to" class="footer-link">{{ link.title }}</NuxtLink>
+            <li v-for="link in navLinks" :key="link.to">
+              <NuxtLink :to="localePath(link.to)" class="footer-link">{{ link.title }}</NuxtLink>
             </li>
           </ul>
         </v-col>
 
         <v-col cols="12" md="4">
-          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">Contact Us</h3>
+          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">{{ t('footer.contactUs') }}</h3>
           <ul class="footer-list">
             <li class="d-flex align-start ga-2 mb-2">
               <v-icon icon="mdi-map-marker-outline" size="18" class="mt-1" />
-              <span>{{ companyInfo.address }}</span>
+              <span>{{ t('company.address') }}</span>
             </li>
             <li class="d-flex align-center ga-2 mb-2">
               <v-icon icon="mdi-phone-outline" size="18" />
@@ -59,7 +58,7 @@
             </li>
             <li class="d-flex align-center ga-2">
               <v-icon icon="mdi-clock-outline" size="18" />
-              <span>{{ companyInfo.workingHours }}</span>
+              <span>{{ t('company.workingHours') }}</span>
             </li>
           </ul>
 
@@ -71,7 +70,7 @@
               style="border: 0"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Suryoday Solar Nashik location map"
+              :title="t('footer.locationMap')"
             />
           </div>
         </v-col>
@@ -80,19 +79,21 @@
       <v-divider class="my-6 opacity-20" />
 
       <div class="d-flex flex-column flex-md-row justify-space-between align-center ga-2 text-caption text-white opacity-70">
-        <span>&copy; {{ year }} {{ companyInfo.name }}. All rights reserved.</span>
-        <span>GSTIN: {{ companyInfo.gstin }} · Nashik, Maharashtra, India</span>
+        <span>&copy; {{ year }} {{ companyInfo.name }}. {{ t('common.rights') }}</span>
+        <span>{{ t('common.gstin') }}: {{ companyInfo.gstin }} · Nashik, Maharashtra, India</span>
       </div>
     </v-container>
   </v-footer>
 </template>
 
 <script setup lang="ts">
-import { companyInfo, mainNav, socialLinks } from '~/data/nav'
-import { services } from '~/data/services'
+import { companyInfo, socialLinks } from '~/data/nav'
 
 const year = new Date().getFullYear()
 const phoneHref = `tel:${companyInfo.phone.replace(/\s+/g, '')}`
+const { t } = useI18n()
+const localePath = useLocalePath()
+const { navLinks, services } = useLocalizedContent()
 </script>
 
 <style scoped lang="scss">

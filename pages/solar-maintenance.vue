@@ -18,8 +18,8 @@
                 <v-list-item-title class="text-body-2">{{ feature }}</v-list-item-title>
               </v-list-item>
             </v-list>
-            <v-btn color="accent" size="large" class="text-deep-navy mt-4" to="/contact" prepend-icon="mdi-calendar-check-outline">
-              Schedule a Service
+            <v-btn color="accent" size="large" class="text-deep-navy mt-4" :to="localePath('/contact')" prepend-icon="mdi-calendar-check-outline">
+              {{ t('pages.maintenance.cta') }}
             </v-btn>
           </v-col>
         </v-row>
@@ -31,7 +31,9 @@
 </template>
 
 <script setup lang="ts">
-import { getServiceBySlug } from '~/data/services'
+const { t } = useI18n()
+const localePath = useLocalePath()
+const { getServiceBySlug } = useLocalizedContent()
 
 const service = getServiceBySlug('solar-maintenance')
 

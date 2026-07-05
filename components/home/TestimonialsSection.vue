@@ -2,9 +2,9 @@
   <section class="section-py" style="background: #FFFFFF">
     <v-container>
       <CommonSectionHeading
-        eyebrow="Testimonials"
-        title="What Our Customers Say"
-        subtitle="Real feedback from homeowners and businesses who switched to solar with us."
+        :eyebrow="t('sections.testimonialsEyebrow')"
+        :title="t('sections.testimonialsTitle')"
+        :subtitle="t('sections.testimonialsSubtitle')"
         center
         max-width="640px"
       />
@@ -43,5 +43,6 @@
 </template>
 
 <script setup lang="ts">
-import { testimonials } from '~/data/testimonials'
+const { t } = useI18n()
+const { testimonials } = useLocalizedContent()
 </script>

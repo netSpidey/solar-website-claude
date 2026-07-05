@@ -32,7 +32,7 @@
                   <h3 class="text-subtitle-1 font-weight-bold text-white mb-1">Ready to go solar in Nashik?</h3>
                   <p class="text-body-2 text-white opacity-90 mb-0">Get a free site survey and personalised quote today.</p>
                 </div>
-                <v-btn color="accent" class="text-deep-navy" to="/contact">Get Free Quote</v-btn>
+                <v-btn color="accent" class="text-deep-navy" :to="localePath('/contact')">Get Free Quote</v-btn>
               </div>
             </v-card>
           </v-col>
@@ -43,7 +43,7 @@
   <div v-else>
     <v-container class="py-16 text-center">
       <h1 class="text-h5 font-weight-bold">Article not found</h1>
-      <v-btn class="mt-4" color="secondary" to="/blog">Back to Blog</v-btn>
+      <v-btn class="mt-4" color="secondary" :to="localePath('/blog')">Back to Blog</v-btn>
     </v-container>
   </div>
 </template>
@@ -52,6 +52,7 @@
 import { getBlogPostBySlug } from '~/data/blog'
 
 const route = useRoute()
+const localePath = useLocalePath()
 const post = getBlogPostBySlug(route.params.slug as string)
 
 if (!post) {
@@ -59,8 +60,8 @@ if (!post) {
 }
 
 const breadcrumbs = [
-  { title: 'Home', to: '/' },
-  { title: 'Blog', to: '/blog' },
+  { title: 'Home', to: localePath('/') },
+  { title: 'Blog', to: localePath('/blog') },
   { title: post.title, disabled: true },
 ]
 

@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       titleTemplate: '%s | Suryoday Solar Nashik',
-      htmlAttrs: { lang: 'en' },
+      htmlAttrs: { lang: 'mr' },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -56,6 +56,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxtjs/i18n',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
         // @ts-expect-error - vuetify plugin type mismatch with nuxt vite config
@@ -63,6 +64,21 @@ export default defineNuxtConfig({
       })
     },
   ],
+
+  i18n: {
+    defaultLocale: 'mr',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: false,
+    locales: [
+      { code: 'mr', name: 'मराठी', language: 'mr-IN' },
+      { code: 'hi', name: 'हिंदी', language: 'hi-IN' },
+      { code: 'en', name: 'English', language: 'en-IN' },
+    ],
+    vueI18n: './i18n.config.ts',
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
+  },
 
   typescript: {
     strict: true,

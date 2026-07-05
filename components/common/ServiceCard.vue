@@ -1,5 +1,5 @@
 <template>
-  <v-card class="service-card hover-lift h-100" elevation="2" :to="`/${service.slug}`">
+  <v-card class="service-card hover-lift h-100" elevation="2" :to="localePath(`/${service.slug}`)">
     <div class="service-card__media">
       <v-img
         :src="service.image"
@@ -20,9 +20,9 @@
       </v-card-text>
     </v-card-item>
 
-    <v-card-actions class="px-4 pb-4 pt-0">
+  <v-card-actions class="px-4 pb-4 pt-0">
       <v-btn variant="text" color="secondary" append-icon="mdi-arrow-right" class="px-0 service-card__cta">
-        Learn More
+        {{ t('common.learnMore') }}
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -32,6 +32,8 @@
 import type { ServiceItem } from '~/data/types'
 
 defineProps<{ service: ServiceItem }>()
+const { t } = useI18n()
+const localePath = useLocalePath()
 </script>
 
 <style scoped lang="scss">
