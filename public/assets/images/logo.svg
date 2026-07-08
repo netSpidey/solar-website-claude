@@ -1,6 +1,7 @@
+<!-- placeholder logo: replace when client supplies artwork -->
 <svg width="220" height="56" viewBox="0 0 220 56" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="8" width="40" height="40" rx="10" fill="#0B1F3A"/>
   <circle cx="20" cy="28" r="10" fill="#FFC107"/>
-  <text x="52" y="26" font-family="Arial, sans-serif" font-size="18" font-weight="800" fill="#0B1F3A">Suryoday Solar</text>
-  <text x="52" y="44" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#43A047">Nashik</text>
+  <text x="52" y="26" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#0B1F3A">S.P. Enterprises</text>
+  <text x="52" y="44" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#43A047">Nashik Solar</text>
 </svg>

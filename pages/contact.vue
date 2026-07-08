@@ -52,7 +52,7 @@
             style="border: 0; display: block"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Suryoday Solar Nashik location map"
+            :title="t('footer.locationMap')"
           />
         </v-card>
       </v-container>
@@ -62,6 +62,8 @@
 
 <script setup lang="ts">
 import { companyInfo } from '~/data/nav'
+
+const { t } = useI18n()
 
 const phoneHref = `tel:${companyInfo.phone.replace(/\s+/g, '')}`
 
@@ -75,8 +77,8 @@ const contactItems = [
 useSeoMeta({
   title: 'Contact Us — Solar Installation Enquiry Nashik',
   description:
-    'Contact Suryoday Solar Nashik for a free rooftop solar site survey, custom quotation, or subsidy assistance. Call, WhatsApp, or send us a message.',
-  ogTitle: 'Contact Suryoday Solar Nashik',
+    'Contact S.P. Enterprises, Nashik Solar for a free rooftop solar site visit, custom quotation, or subsidy assistance. Call, WhatsApp, or send us a message.',
+  ogTitle: 'Contact S.P. Enterprises, Nashik Solar',
   ogDescription: 'Get a free solar site survey and quotation in Nashik, Maharashtra.',
   keywords: 'contact solar company Nashik, solar quotation Nashik, solar installer contact Maharashtra',
 })

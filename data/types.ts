@@ -1,8 +1,3 @@
-export interface NavLink {
-  title: string
-  to: string
-}
-
 export interface ServiceItem {
   slug: string
   title: string
@@ -12,6 +7,8 @@ export interface ServiceItem {
   image: string
   imagePosition?: string
   features: string[]
+  /** Hidden services stay routable by direct URL but are excluded from nav, grids, and forms. */
+  hidden?: boolean
 }
 
 export interface ProjectItem {

@@ -58,7 +58,7 @@ const form = reactive({
 
 const propertyOptionLabels = computed(() => tm('forms.propertyOptions') as string[])
 const propertyOptions = computed(() =>
-  ['Residential', 'Commercial', 'Industrial'].map((value, index) => ({
+  ['Residential', 'Commercial'].map((value, index) => ({
     value,
     title: propertyOptionLabels.value[index] || value,
   }))

@@ -1,0 +1,17 @@
+<!-- placeholder illustration: replace with a real EV charger installation photo -->
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="gevc01" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1F3A"/><stop offset="1" stop-color="#12305c"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#gevc01)"/>
+
+  <!-- charging station -->
+  <g transform="translate(400,260) scale(1.4)" opacity="0.9">
+    <rect x="-30" y="-70" width="60" height="120" rx="8" fill="#FFC107" opacity="0.18" stroke="#FFC107" stroke-width="3"/>
+    <rect x="-18" y="-56" width="36" height="28" rx="4" fill="none" stroke="#FFC107" stroke-width="2"/>
+    <!-- lightning bolt -->
+    <path d="M 4 -18 L -10 8 L -1 8 L -6 30 L 12 0 L 2 0 Z" fill="#FFC107"/>
+    <!-- cable -->
+    <path d="M 30 -20 q 34 6 34 40 q 0 22 -18 26" fill="none" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  </g><circle cx="620" cy="130" r="30" fill="#FFC107" opacity="0.85"/><line x1="658.0" y1="130.0" x2="668.0" y2="130.0" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/><line x1="646.9" y1="156.9" x2="653.9" y2="163.9" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/><line x1="620.0" y1="168.0" x2="620.0" y2="178.0" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/><line x1="593.1" y1="156.9" x2="586.1" y2="163.9" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/><line x1="582.0" y1="130.0" x2="572.0" y2="130.0" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/><line x1="593.1" y1="103.1" x2="586.1" y2="96.1" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/><line x1="620.0" y1="92.0" x2="620.0" y2="82.0" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/><line x1="646.9" y1="103.1" x2="653.9" y2="96.1" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+  <text x="400" y="544" text-anchor="middle" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#FFFFFF">EV Charging Solutions</text>
+  <text x="400" y="574" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#FFFFFF" opacity="0.8">Home, society & business charging points</text>
+</svg>

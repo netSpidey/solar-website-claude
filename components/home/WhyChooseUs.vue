@@ -10,7 +10,7 @@
       />
 
       <v-row class="mt-8">
-        <v-col v-for="(item, i) in whyChooseUs" :key="item.title" cols="12" sm="6" md="4">
+        <v-col v-for="(item, i) in whyChooseUs" :key="item.icon" cols="12" sm="6" md="3">
           <CommonRevealOnScroll :delay="i * 70">
             <v-card class="pa-6 h-100 hover-lift" elevation="0" rounded="xl" style="border: 1px solid rgba(11,31,58,0.08)">
               <v-icon :icon="item.icon" color="secondary" size="32" class="mb-4" />

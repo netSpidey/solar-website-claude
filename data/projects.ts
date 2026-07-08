@@ -1,5 +1,6 @@
 import type { ProjectItem } from './types'
 
+// PLACEHOLDER portfolio — replace with real S.P. Enterprises installations before go-live.
 export const projects: ProjectItem[] = [
   {
     id: 'proj-1',
@@ -45,27 +46,5 @@ export const projects: ProjectItem[] = [
     imagePosition: 'center 88%',
     description:
       'A 40 kW hybrid rooftop system supporting a hotel and banquet hall with heavy daytime HVAC load.',
-  },
-  {
-    id: 'proj-5',
-    title: 'MIDC Manufacturing Unit',
-    location: 'Ambad MIDC, Nashik',
-    systemSize: '250 kW',
-    propertyType: 'Industrial',
-    estimatedSavings: '₹3,10,000/month',
-    image: '/assets/images/projects/project-industrial-1.jpg',
-    description:
-      'Large rooftop installation for a manufacturing plant, integrated with net metering and real-time SCADA monitoring.',
-  },
-  {
-    id: 'proj-6',
-    title: 'Warehouse Ground-Mount Plant',
-    location: 'Sinnar, Nashik District',
-    systemSize: '500 kW',
-    propertyType: 'Industrial',
-    estimatedSavings: '₹6,20,000/month',
-    image: '/assets/images/projects/project-industrial-2.jpg',
-    description:
-      'Ground-mount solar plant powering a logistics warehouse complex under a group captive arrangement.',
   },
 ]

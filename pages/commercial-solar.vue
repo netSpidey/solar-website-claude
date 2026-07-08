@@ -49,6 +49,9 @@
       </v-container>
     </section>
 
+    <CommonSystemTypesSection />
+    <CommonNetMeteringSection />
+
     <HomeProcessTimeline />
 
     <section class="section-py" style="background: #F8F9FA">

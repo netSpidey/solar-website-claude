@@ -33,27 +33,30 @@ export const messages = {
       contact: 'Contact Us',
     },
     company: {
-      tagline: 'Clean Energy for a Brighter Nashik',
-      address: 'Plot No. 14, College Road, Nashik, Maharashtra 422005',
+      brandLine1: 'S.P. Enterprises',
+      brandLine2: 'Nashik Solar',
+      tagline: 'Surya Ki Shakti, Ghar Ki Bachat.',
+      address: 'Flat No. A-401, Aaradhya Residency, Phase-2, Aanand Nagar, Near Kadam Lawns, Nashik Road, Nashik - 422101',
       workingHours: 'Mon - Sat: 9:30 AM - 7:00 PM',
       footerAbout:
-        'Suryoday Solar Nashik designs and installs premium rooftop solar systems for homes, businesses, and industries across Nashik, Maharashtra.',
+        'S.P. Enterprises, Nashik Solar is an Authorized Channel Partner & Solar EPC Contractor registered under the PM Surya Ghar Yojana, installing premium rooftop solar systems for homes and businesses across Nashik.',
     },
     footer: {
       services: 'Services',
       quickLinks: 'Quick Links',
       contactUs: 'Contact Us',
-      locationMap: 'Suryoday Solar Nashik location map',
+      locationMap: 'S.P. Enterprises, Nashik Solar location map',
+      terms: 'Terms & Conditions',
     },
     hero: {
-      badge: '#1 Solar Installer in Nashik',
+      badge: 'PM Surya Ghar Registered Vendor',
       titlePrefix: 'Power Your Home with',
       titleHighlight: 'Clean Solar Energy',
       subtitle:
-        'Save up to 90% on electricity bills with professionally installed rooftop solar systems in Nashik.',
+        'Save up to 90% on electricity bills with rooftop solar — government subsidy up to ₹78,000, bank loans at 6.4%, and a free site visit in Nashik.',
       calculate: 'Calculate Your Savings',
       expert: 'Talk to an Expert',
-      trust: ['Free Site Survey', 'Govt. Subsidy Assistance', '25-Year Warranty'],
+      trust: ['Free Site Visit', 'Subsidy up to ₹78,000', '25-Year Performance Warranty'],
     },
     sections: {
       servicesEyebrow: 'Our Services',
@@ -82,6 +85,95 @@ export const messages = {
       finalTitle: 'Ready to Reduce Your Electricity Bill?',
       finalSubtitle:
         "Get a free, no-obligation site survey and personalised solar quote from Nashik's trusted installation experts.",
+      // DEADLINE: PM Surya Ghar Yojana closing date — update/remove when the scheme ends.
+      deadlineText: 'PM Surya Ghar Yojana closes on 31 March 2027 — register now to claim a subsidy of up to ₹78,000.',
+      deadlineCta: 'Check Your Subsidy',
+      brandsEyebrow: 'Trusted Brands',
+      brandsTitle: 'Panels & Components From Leading Brands',
+    },
+    stats: {
+      values: ['₹78,000', '25 Years', '3–4 Years', '6.4%'],
+      labels: ['Max Central Subsidy', 'Performance Warranty', 'Typical Payback', 'Bank Loan Interest'],
+    },
+    why: {
+      titles: [
+        'Subsidy up to ₹78,000',
+        'Bank Loans at 6.4%',
+        'MSEB-Compliant Installation',
+        '25-Year Performance Warranty',
+        'Payback in 3–4 Years',
+        'Experienced Technicians',
+        'Fast & Transparent Service',
+        'Complete After-Sales Support',
+      ],
+      descriptions: [
+        'Government subsidy up to ₹78,000 under PM Surya Ghar Yojana, with complete application support.',
+        'Nationalised-bank solar loans at 6.4% interest — we assist with the application.',
+        'Installation as per MSEB/MSEDCL norms with complete net metering support.',
+        'Tier-1 panels with up to 25-year performance warranty.',
+        'Recover your investment in just 3–4 years through electricity bill savings.',
+        'Skilled, experienced team for safe and high-quality installation.',
+        'Quick, transparent, and reliable service from enquiry to commissioning.',
+        'Full support after the sale — service visits, AMC plans, and quick fault response.',
+      ],
+    },
+    systemTypes: {
+      eyebrow: 'System Types',
+      title: 'On-Grid, Off-Grid & Hybrid Options',
+      onGridTitle: 'On-Grid Solar',
+      onGridDesc: 'Grid-connected system with net metering — export extra power to MSEDCL and get credit on your bill.',
+      offGridTitle: 'Off-Grid Solar',
+      offGridDesc: 'Battery-backed independence for areas with unreliable supply — store solar power and use it any time.',
+      hybridTitle: 'Hybrid Solar',
+      hybridDesc: 'Best of both — stay grid-connected with battery backup for uninterrupted power during outages.',
+    },
+    netMetering: {
+      eyebrow: 'Net Metering',
+      title: 'We Handle Your Complete MSEDCL Net Metering',
+      description:
+        'Net metering lets you export unused solar power to the grid and receive credit on your electricity bill. Our team manages the entire MSEDCL application, documentation, and meter installation for you.',
+      step1Title: 'Application',
+      step1Desc: 'We prepare and file your net metering application with MSEDCL.',
+      step2Title: 'Meter Installation',
+      step2Desc: 'MSEDCL installs the bidirectional meter after approval.',
+      step3Title: 'Export Credit',
+      step3Desc: 'Surplus units are credited against your bill every month.',
+    },
+    subsidy: {
+      heroTitle: 'Solar Subsidy Assistance in Nashik',
+      // DEADLINE: PM Surya Ghar Yojana closing date — update/remove when the scheme ends.
+      heroSubtitle:
+        'PM Surya Ghar Yojana closes on 31 March 2027 — we handle the complete subsidy application so you get the maximum benefit with zero paperwork hassle.',
+      eyebrow: 'PM Surya Ghar Muft Bijli Yojana',
+      title: 'Get Up to ₹78,000 in Central Subsidy',
+      subtitle: 'Residential rooftop solar systems up to 3 kW are eligible for subsidy under the national PM Surya Ghar scheme.',
+      slabCapacities: ['Up to 1 kW', '2 kW', '3 kW & above'],
+      disclaimer:
+        'Subsidy amounts are indicative and subject to the latest government notification at the time of application. Our team confirms exact figures during your free consultation.',
+      registeredBadge: 'Registered Vendor under PM Surya Ghar Yojana',
+      channelPartner: 'Authorized Channel Partner / Solar EPC Contractor',
+      eligibilityTitle: 'Eligibility Checklist',
+      eligibility: [
+        'Property owner with a valid electricity connection',
+        'Roof area with good sunlight exposure and no major shading',
+        'Willingness to install a system up to 3 kW for maximum central subsidy',
+        'Valid identity and property ownership documents',
+      ],
+      loanTitle: 'Solar Loans at 6.4% Interest',
+      loanDesc: 'Nationalised banks offer solar loans at 6.4% interest — our team assists you with the complete loan application.',
+      processEyebrow: 'Application Process',
+      processTitle: 'How We Handle Your Subsidy Application',
+      stepTitles: ['Registration', 'Documentation', 'Installation & Inspection', 'Disbursement'],
+      stepDescriptions: [
+        'We register your application on the national solar portal.',
+        'Submission of ID, address proof, and electricity bill.',
+        'System installation followed by DISCOM inspection.',
+        'Subsidy credited directly to your bank account.',
+      ],
+      kusumEyebrow: 'PM-KUSUM Scheme',
+      kusumTitle: 'Subsidy for Solar Water Pumps',
+      kusumSubtitle: 'Farmers across Nashik district can avail subsidy on solar-powered irrigation pumps under the PM-KUSUM scheme.',
+      kusumCta: 'Learn About Solar Water Pumps',
     },
     forms: {
       quoteTitle: 'Get a Free Solar Quote',
@@ -104,7 +196,7 @@ export const messages = {
       contactSuccess: 'Thank you! Our solar consultant will contact you within 24 hours.',
       privacy: 'No spam. Your details are used only to contact you about solar options.',
       there: 'there',
-      propertyOptions: ['Residential', 'Commercial', 'Industrial'],
+      propertyOptions: ['Residential', 'Commercial'],
     },
     calculator: {
       averageBill: 'Average Monthly Electricity Bill',
@@ -124,6 +216,35 @@ export const messages = {
       maintenance: { cta: 'Schedule a Service' },
       amc: { cta: 'Enquire About AMC Plans' },
       waterPump: { cta: 'Enquire About Solar Pumps' },
+      autoCleaning: { cta: 'Enquire About Auto Cleaning' },
+      evCharging: { cta: 'Enquire About EV Charging' },
+      terms: {
+        title: 'Terms & Conditions',
+        subtitle: 'Solar plant supply & installation — terms that apply to our proposals and installations.',
+      },
+      about: {
+        heroTitle: 'About S.P. Enterprises, Nashik Solar',
+        heroSubtitle: 'A local Nashik team helping homes and businesses switch to clean, affordable solar energy.',
+        storyEyebrow: 'Our Story',
+        storyTitle: "A Local Team, Committed to Nashik's Solar Future",
+        storyPara1:
+          'S.P. Enterprises, Nashik Solar is an Authorized Channel Partner and Solar EPC Contractor, registered as a vendor under the PM Surya Ghar Yojana. Our mission is simple — make clean, reliable solar energy accessible to every home and business in and around Nashik.',
+        storyPara2:
+          'We handle every stage of your solar journey ourselves — free site visit, subsidy application, installation, MSEDCL net metering, and long-term after-sales service — so you never have to deal with multiple vendors.',
+        valuesEyebrow: 'Our Values',
+        valuesTitle: 'What Drives Us Every Day',
+        valueTitles: ['Transparency', 'Quality', 'Reliability', 'Local Focus'],
+        valueDescriptions: [
+          'Clear pricing and honest recommendations — no hidden costs, ever.',
+          'Only Tier-1 panels and inverters, installed to strict safety standards.',
+          'On-time installation and responsive after-sales support, always.',
+          "Deep understanding of Nashik's climate, tariffs, and subsidy processes.",
+        ],
+        teamEyebrow: 'Meet the Proprietor',
+        teamTitle: 'Led From the Front',
+        teamSubtitle: 'Every project is personally overseen from first site visit to final commissioning.',
+        proprietorRole: 'Proprietor — Authorized Channel Partner / Solar EPC Contractor',
+      },
     },
     services: {
       residentialSolar: {
@@ -204,6 +325,32 @@ export const messages = {
           'On-site farmer training',
         ],
       },
+      autoCleaningSystem: {
+        title: 'Auto Cleaning System',
+        shortDescription: 'Automatic panel cleaning for maximum generation, zero manual effort.',
+        description:
+          'Automated solar panel cleaning systems that keep your panels dust-free year-round — improving generation by 5–20% while saving water, time, and labour. Can be retrofitted on existing plants.',
+        features: [
+          'Panels stay clean for maximum generation',
+          '5–20% improvement in performance',
+          'Saves time and manual labour',
+          'Water-saving cleaning cycles',
+          'Retrofit-friendly for existing plants',
+        ],
+      },
+      evCharging: {
+        title: 'EV Charging Solutions',
+        shortDescription: 'EV charger installation for homes, societies, and businesses.',
+        description:
+          'Safe, professionally installed EV charging points for homes, housing societies, and commercial premises — with the option to power your charging from rooftop solar.',
+        features: [
+          'Home & society charger installation',
+          'Solar-integrated charging options',
+          'Safe, code-compliant wiring',
+          'AC charger options for every budget',
+          'Installation with after-sales support',
+        ],
+      },
     },
     categories: {
       Residential: 'Residential',
@@ -252,27 +399,30 @@ export const messages = {
       contact: 'संपर्क',
     },
     company: {
-      tagline: 'नाशिकसाठी स्वच्छ ऊर्जेचा उज्ज्वल मार्ग',
-      address: 'प्लॉट क्र. 14, कॉलेज रोड, नाशिक, महाराष्ट्र 422005',
+      brandLine1: 'एस.पी. एन्टरप्रायजेस',
+      brandLine2: 'नाशिक सोलर',
+      tagline: 'सूर्याची शक्ती, घराची बचत.',
+      address: 'फ्लॅट क्र. A-401, आराध्या रेसिडेन्सी, फेज-2, आनंद नगर, कदम लॉन्सजवळ, नाशिक रोड, नाशिक - 422101',
       workingHours: 'सोम - शनि: सकाळी 9:30 - सायं. 7:00',
       footerAbout:
-        'सूर्योदय सोलर नाशिक घरे, व्यवसाय आणि उद्योगांसाठी प्रीमियम रूफटॉप सोलर सिस्टमची रचना आणि स्थापना करते.',
+        'एस.पी. एन्टरप्रायजेस, नाशिक सोलर — पीएम सूर्य घर योजनेअंतर्गत नोंदणीकृत अधिकृत चॅनल पार्टनर व सोलर EPC कॉन्ट्रॅक्टर. नाशिकमधील घरे आणि व्यवसायांसाठी दर्जेदार रूफटॉप सोलर सिस्टमची स्थापना.',
     },
     footer: {
       services: 'सेवा',
       quickLinks: 'त्वरित दुवे',
       contactUs: 'संपर्क',
-      locationMap: 'सूर्योदय सोलर नाशिक स्थान नकाशा',
+      locationMap: 'एस.पी. एन्टरप्रायजेस, नाशिक सोलर स्थान नकाशा',
+      terms: 'अटी व शर्ती',
     },
     hero: {
-      badge: 'नाशिकमधील #1 सोलर इंस्टॉलर',
+      badge: 'पीएम सूर्य घर नोंदणीकृत विक्रेता',
       titlePrefix: 'तुमच्या घराला द्या',
       titleHighlight: 'स्वच्छ सौर ऊर्जेची साथ',
       subtitle:
-        'नाशिकमध्ये व्यावसायिक पद्धतीने बसवलेल्या रूफटॉप सोलर सिस्टममुळे वीजबिलात 90% पर्यंत बचत करा.',
+        'रूफटॉप सोलरने वीजबिलात 90% पर्यंत बचत — ₹78,000 पर्यंत शासकीय सबसिडी, 6.4% व्याजदराने बँक कर्ज आणि नाशिकमध्ये मोफत साइट व्हिजिट.',
       calculate: 'बचत मोजा',
       expert: 'तज्ञांशी बोला',
-      trust: ['मोफत साइट सर्व्हे', 'सरकारी सबसिडी मदत', '25 वर्षांची वॉरंटी'],
+      trust: ['मोफत साइट व्हिजिट', '₹78,000 पर्यंत सबसिडी', '25 वर्षांची परफॉर्मन्स वॉरंटी'],
     },
     sections: {
       servicesEyebrow: 'आमच्या सेवा',
@@ -300,6 +450,95 @@ export const messages = {
       finalTitle: 'वीजबिल कमी करण्यास तयार आहात?',
       finalSubtitle:
         'नाशिकमधील विश्वासू स्थापना तज्ञांकडून मोफत साइट सर्व्हे आणि वैयक्तिक सोलर कोट मिळवा.',
+      // DEADLINE: पीएम सूर्य घर योजनेची अंतिम तारीख — योजना संपल्यावर अपडेट/काढून टाका.
+      deadlineText: 'पीएम सूर्य घर योजना 31 मार्च 2027 रोजी बंद होणार आहे — ₹78,000 पर्यंत सबसिडीसाठी आजच नोंदणी करा.',
+      deadlineCta: 'तुमची सबसिडी तपासा',
+      brandsEyebrow: 'विश्वासू ब्रँड्स',
+      brandsTitle: 'आघाडीच्या ब्रँड्सचे पॅनल्स व साहित्य',
+    },
+    stats: {
+      values: ['₹78,000', '25 वर्षे', '3–4 वर्षे', '6.4%'],
+      labels: ['कमाल केंद्रीय सबसिडी', 'परफॉर्मन्स वॉरंटी', 'गुंतवणुकीचा परतावा', 'बँक कर्ज व्याजदर'],
+    },
+    why: {
+      titles: [
+        '₹78,000 पर्यंत सबसिडी',
+        '6.4% व्याजदराने बँक कर्ज',
+        'MSEB नियमांनुसार स्थापना',
+        '25 वर्षांची परफॉर्मन्स वॉरंटी',
+        '3–4 वर्षांत परतावा',
+        'अनुभवी तंत्रज्ञ',
+        'जलद व पारदर्शक सेवा',
+        'सेल्सनंतरही पूर्ण सपोर्ट',
+      ],
+      descriptions: [
+        'पीएम सूर्य घर योजनेअंतर्गत ₹78,000 पर्यंत शासकीय अनुदान, संपूर्ण अर्ज प्रक्रियेत मदत.',
+        'राष्ट्रीयीकृत बँकांकडून 6.4% व्याजदराने सोलर कर्ज — अर्जासाठी आमची मदत.',
+        'MSEB/MSEDCL नियमांनुसार इन्स्टॉलेशन आणि संपूर्ण नेट मीटरिंग मदत.',
+        'टियर-1 पॅनल्ससह 25 वर्षांपर्यंत परफॉर्मन्स वॉरंटी.',
+        'वीजबिल बचतीतून फक्त 3–4 वर्षांत गुंतवणुकीचा परतावा मिळवा.',
+        'सुरक्षित आणि दर्जेदार स्थापनेसाठी कुशल, अनुभवी टीम.',
+        'चौकशीपासून कार्यान्वयनापर्यंत जलद, पारदर्शक आणि विश्वासार्ह सेवा.',
+        'विक्रीनंतर पूर्ण सपोर्ट — सर्व्हिस भेटी, AMC योजना आणि जलद फॉल्ट प्रतिसाद.',
+      ],
+    },
+    systemTypes: {
+      eyebrow: 'सिस्टम प्रकार',
+      title: 'ऑन-ग्रिड, ऑफ-ग्रिड आणि हायब्रिड पर्याय',
+      onGridTitle: 'ऑन-ग्रिड सोलर',
+      onGridDesc: 'नेट मीटरिंगसह ग्रिड-जोडलेली सिस्टम — जास्तीची वीज MSEDCL ला पाठवा आणि बिलात क्रेडिट मिळवा.',
+      offGridTitle: 'ऑफ-ग्रिड सोलर',
+      offGridDesc: 'अनियमित वीजपुरवठा असलेल्या भागांसाठी बॅटरी बॅकअपसह स्वतंत्र सिस्टम — सौरवीज साठवा आणि हवी तेव्हा वापरा.',
+      hybridTitle: 'हायब्रिड सोलर',
+      hybridDesc: 'दोन्हींचे फायदे — ग्रिड कनेक्शनसह बॅटरी बॅकअप, वीज गेल्यावरही अखंड वीजपुरवठा.',
+    },
+    netMetering: {
+      eyebrow: 'नेट मीटरिंग',
+      title: 'तुमचे संपूर्ण MSEDCL नेट मीटरिंग आम्ही करतो',
+      description:
+        'नेट मीटरिंगमुळे न वापरलेली सौरवीज ग्रिडला पाठवून वीजबिलात क्रेडिट मिळते. MSEDCL अर्ज, कागदपत्रे आणि मीटर बसवण्याची संपूर्ण प्रक्रिया आमची टीम सांभाळते.',
+      step1Title: 'अर्ज',
+      step1Desc: 'MSEDCL कडे नेट मीटरिंग अर्ज आम्ही तयार करून दाखल करतो.',
+      step2Title: 'मीटर बसवणे',
+      step2Desc: 'मंजुरीनंतर MSEDCL द्विदिश मीटर बसवते.',
+      step3Title: 'बिलात क्रेडिट',
+      step3Desc: 'जास्तीचे युनिट्स दरमहा तुमच्या बिलात वजा होतात.',
+    },
+    subsidy: {
+      heroTitle: 'नाशिकमध्ये सोलर सबसिडी मदत',
+      // DEADLINE: पीएम सूर्य घर योजनेची अंतिम तारीख — योजना संपल्यावर अपडेट/काढून टाका.
+      heroSubtitle:
+        'पीएम सूर्य घर योजना 31 मार्च 2027 रोजी बंद होणार आहे — कागदपत्रांच्या त्रासाशिवाय जास्तीत जास्त लाभासाठी संपूर्ण सबसिडी अर्ज प्रक्रिया आम्ही करतो.',
+      eyebrow: 'पीएम सूर्य घर मोफत वीज योजना',
+      title: '₹78,000 पर्यंत केंद्रीय सबसिडी मिळवा',
+      subtitle: '3 किलोवॅटपर्यंतच्या घरगुती रूफटॉप सोलर सिस्टमला पीएम सूर्य घर योजनेअंतर्गत सबसिडी मिळते.',
+      slabCapacities: ['1 किलोवॅट पर्यंत', '2 किलोवॅट', '3 किलोवॅट व अधिक'],
+      disclaimer:
+        'सबसिडी रक्कम अंदाजे असून अर्जाच्या वेळी लागू असलेल्या शासकीय अधिसूचनेनुसार बदलू शकते. मोफत सल्लामसलतीत आमची टीम नेमकी रक्कम सांगते.',
+      registeredBadge: 'पीएम सूर्य घर योजनेअंतर्गत नोंदणीकृत विक्रेता',
+      channelPartner: 'अधिकृत चॅनल पार्टनर / सोलर EPC कॉन्ट्रॅक्टर',
+      eligibilityTitle: 'पात्रता यादी',
+      eligibility: [
+        'वैध वीज जोडणी असलेले मालमत्ताधारक',
+        'चांगला सूर्यप्रकाश असलेले व सावली नसलेले छत',
+        'कमाल केंद्रीय सबसिडीसाठी 3 किलोवॅटपर्यंत सिस्टम बसवण्याची तयारी',
+        'वैध ओळखपत्र व मालमत्तेची कागदपत्रे',
+      ],
+      loanTitle: '6.4% व्याजदराने सोलर कर्ज',
+      loanDesc: 'राष्ट्रीयीकृत बँका 6.4% व्याजदराने सोलर कर्ज देतात — संपूर्ण कर्ज अर्जासाठी आमची टीम मदत करते.',
+      processEyebrow: 'अर्ज प्रक्रिया',
+      processTitle: 'तुमचा सबसिडी अर्ज आम्ही कसा हाताळतो',
+      stepTitles: ['नोंदणी', 'कागदपत्रे', 'स्थापना व तपासणी', 'रक्कम जमा'],
+      stepDescriptions: [
+        'राष्ट्रीय सोलर पोर्टलवर तुमचा अर्ज आम्ही नोंदवतो.',
+        'ओळखपत्र, पत्त्याचा पुरावा आणि वीजबिल सादर करणे.',
+        'सिस्टम स्थापनेनंतर DISCOM तपासणी.',
+        'सबसिडी थेट तुमच्या बँक खात्यात जमा होते.',
+      ],
+      kusumEyebrow: 'पीएम-कुसुम योजना',
+      kusumTitle: 'सोलर वॉटर पंपसाठी सबसिडी',
+      kusumSubtitle: 'नाशिक जिल्ह्यातील शेतकऱ्यांना पीएम-कुसुम योजनेअंतर्गत सोलर सिंचन पंपांवर सबसिडी मिळू शकते.',
+      kusumCta: 'सोलर वॉटर पंपबद्दल जाणून घ्या',
     },
     forms: {
       quoteTitle: 'मोफत सोलर कोट मिळवा',
@@ -322,7 +561,7 @@ export const messages = {
       contactSuccess: 'धन्यवाद! आमचा सोलर सल्लागार 24 तासांत संपर्क करेल.',
       privacy: 'स्पॅम नाही. तुमची माहिती फक्त सोलर पर्यायांबद्दल संपर्कासाठी वापरली जाते.',
       there: 'मित्रा',
-      propertyOptions: ['घरगुती', 'व्यावसायिक', 'औद्योगिक'],
+      propertyOptions: ['घरगुती', 'व्यावसायिक'],
     },
     calculator: {
       averageBill: 'सरासरी मासिक वीजबिल',
@@ -342,6 +581,35 @@ export const messages = {
       maintenance: { cta: 'सर्व्हिस शेड्यूल करा' },
       amc: { cta: 'AMC प्लॅनबद्दल विचारा' },
       waterPump: { cta: 'सोलर पंपबद्दल विचारा' },
+      autoCleaning: { cta: 'ऑटो क्लीनिंगबद्दल विचारा' },
+      evCharging: { cta: 'EV चार्जिंगबद्दल विचारा' },
+      terms: {
+        title: 'अटी व शर्ती',
+        subtitle: 'सोलर प्लांट पुरवठा व स्थापना — आमच्या प्रस्तावांना व इन्स्टॉलेशनला लागू होणाऱ्या अटी.',
+      },
+      about: {
+        heroTitle: 'एस.पी. एन्टरप्रायजेस, नाशिक सोलरबद्दल',
+        heroSubtitle: 'घरे आणि व्यवसायांना स्वच्छ, परवडणाऱ्या सौरऊर्जेकडे नेणारी नाशिकची स्थानिक टीम.',
+        storyEyebrow: 'आमची कहाणी',
+        storyTitle: 'नाशिकच्या सौर भविष्यासाठी वचनबद्ध स्थानिक टीम',
+        storyPara1:
+          'एस.पी. एन्टरप्रायजेस, नाशिक सोलर हे अधिकृत चॅनल पार्टनर आणि सोलर EPC कॉन्ट्रॅक्टर असून पीएम सूर्य घर योजनेअंतर्गत नोंदणीकृत विक्रेता आहे. नाशिक परिसरातील प्रत्येक घर आणि व्यवसायाला स्वच्छ, विश्वासार्ह सौरऊर्जा उपलब्ध करून देणे हे आमचे ध्येय आहे.',
+        storyPara2:
+          'तुमच्या सोलर प्रवासाचा प्रत्येक टप्पा आम्हीच सांभाळतो — मोफत साइट व्हिजिट, सबसिडी अर्ज, स्थापना, MSEDCL नेट मीटरिंग आणि दीर्घकालीन आफ्टर-सेल्स सेवा — त्यामुळे तुम्हाला अनेक विक्रेत्यांकडे जावे लागत नाही.',
+        valuesEyebrow: 'आमची मूल्ये',
+        valuesTitle: 'आम्हाला दररोज प्रेरित करणाऱ्या गोष्टी',
+        valueTitles: ['पारदर्शकता', 'दर्जा', 'विश्वासार्हता', 'स्थानिक लक्ष'],
+        valueDescriptions: [
+          'स्पष्ट किंमत आणि प्रामाणिक सल्ला — कोणतेही छुपे शुल्क नाही.',
+          'फक्त टियर-1 पॅनल्स व इन्व्हर्टर, कडक सुरक्षा मानकांनुसार स्थापना.',
+          'वेळेवर स्थापना आणि तत्पर आफ्टर-सेल्स सपोर्ट, नेहमीच.',
+          'नाशिकचे हवामान, वीजदर आणि सबसिडी प्रक्रियेची सखोल माहिती.',
+        ],
+        teamEyebrow: 'प्रोप्रायटरची ओळख',
+        teamTitle: 'स्वतः पुढाकाराने नेतृत्व',
+        teamSubtitle: 'पहिल्या साइट व्हिजिटपासून अंतिम कार्यान्वयनापर्यंत प्रत्येक प्रकल्पावर वैयक्तिक लक्ष.',
+        proprietorRole: 'प्रोप्रायटर — अधिकृत चॅनल पार्टनर / सोलर EPC कॉन्ट्रॅक्टर',
+      },
     },
     services: {
       residentialSolar: {
@@ -382,6 +650,20 @@ export const messages = {
         shortDescription: 'नाशिक परिसरातील शेतांसाठी सौर ऊर्जेवर चालणारे सिंचन पंप.',
         description: 'PM-KUSUM अंतर्गत सबसिडीसह शेतीसाठी विश्वासार्ह सोलर वॉटर पंपिंग सिस्टम, डिझेल आणि वीज खर्च कमी करण्यासाठी.',
         features: ['PM-KUSUM सबसिडी मदत', 'DC आणि AC सबमर्सिबल पंप पर्याय', 'बोअरवेल आणि विहिरीनुसार साइजिंग', 'कमी देखभाल डिझाइन', 'शेतकरी प्रशिक्षण'],
+      },
+      autoCleaningSystem: {
+        title: 'ऑटो क्लीनिंग सिस्टम',
+        shortDescription: 'स्वयंचलित पॅनल स्वच्छता — जास्तीत जास्त वीज निर्मिती, मानवी कष्टाशिवाय.',
+        description:
+          'स्वयंचलित पॅनल स्वच्छता प्रणालीमुळे पॅनल वर्षभर धूळमुक्त राहतात — परफॉर्मन्समध्ये 5–20% वाढ, पाणी, वेळ आणि मेहनतीची बचत. सध्याच्या प्लांटवरही बसवता येते.',
+        features: ['पॅनल नेहमी स्वच्छ — जास्त वीज निर्मिती', 'परफॉर्मन्समध्ये 5–20% पर्यंत वाढ', 'वेळ व मेहनत वाचते', 'कमी पाण्यात जास्त साफसफाई', 'सध्याच्या प्लांटवर बसवण्यास योग्य'],
+      },
+      evCharging: {
+        title: 'EV चार्जिंग सोल्यूशन्स',
+        shortDescription: 'घरे, सोसायट्या आणि व्यवसायांसाठी EV चार्जर स्थापना.',
+        description:
+          'घरे, हाऊसिंग सोसायट्या आणि व्यावसायिक जागांसाठी सुरक्षित, व्यावसायिक EV चार्जिंग पॉइंट — रूफटॉप सोलरवर चार्जिंगचा पर्यायही उपलब्ध.',
+        features: ['घर व सोसायटी चार्जर स्थापना', 'सोलर-इंटिग्रेटेड चार्जिंग पर्याय', 'सुरक्षित, नियमांनुसार वायरिंग', 'प्रत्येक बजेटसाठी AC चार्जर पर्याय', 'स्थापनेसह आफ्टर-सेल्स सपोर्ट'],
       },
     },
     categories: {
@@ -431,27 +713,30 @@ export const messages = {
       contact: 'संपर्क',
     },
     company: {
-      tagline: 'नाशिक के लिए स्वच्छ ऊर्जा',
-      address: 'प्लॉट नंबर 14, कॉलेज रोड, नाशिक, महाराष्ट्र 422005',
+      brandLine1: 'एस.पी. एंटरप्राइजेस',
+      brandLine2: 'नाशिक सोलर',
+      tagline: 'सूर्य की शक्ति, घर की बचत.',
+      address: 'फ्लैट नं. A-401, आराध्या रेसिडेंसी, फेज-2, आनंद नगर, कदम लॉन्स के पास, नाशिक रोड, नाशिक - 422101',
       workingHours: 'सोम - शनि: सुबह 9:30 - शाम 7:00',
       footerAbout:
-        'सूर्योदय सोलर नाशिक घरों, व्यवसायों और उद्योगों के लिए प्रीमियम रूफटॉप सोलर सिस्टम डिजाइन और इंस्टॉल करता है.',
+        'एस.पी. एंटरप्राइजेस, नाशिक सोलर — पीएम सूर्य घर योजना के तहत पंजीकृत अधिकृत चैनल पार्टनर व सोलर EPC कॉन्ट्रैक्टर. नाशिक में घरों और व्यवसायों के लिए प्रीमियम रूफटॉप सोलर सिस्टम इंस्टॉल करता है.',
     },
     footer: {
       services: 'सेवाएं',
       quickLinks: 'त्वरित लिंक',
       contactUs: 'संपर्क',
-      locationMap: 'सूर्योदय सोलर नाशिक लोकेशन मैप',
+      locationMap: 'एस.पी. एंटरप्राइजेस, नाशिक सोलर लोकेशन मैप',
+      terms: 'नियम और शर्तें',
     },
     hero: {
-      badge: 'नाशिक का #1 सोलर इंस्टॉलर',
+      badge: 'पीएम सूर्य घर पंजीकृत विक्रेता',
       titlePrefix: 'अपने घर को दें',
       titleHighlight: 'स्वच्छ सौर ऊर्जा',
       subtitle:
-        'नाशिक में पेशेवर तरीके से इंस्टॉल किए गए रूफटॉप सोलर सिस्टम से बिजली बिल में 90% तक बचत करें.',
+        'रूफटॉप सोलर से बिजली बिल में 90% तक बचत — ₹78,000 तक सरकारी सब्सिडी, 6.4% ब्याज पर बैंक लोन और नाशिक में मुफ्त साइट विजिट.',
       calculate: 'बचत कैलकुलेट करें',
       expert: 'विशेषज्ञ से बात करें',
-      trust: ['मुफ्त साइट सर्वे', 'सरकारी सब्सिडी सहायता', '25 साल की वारंटी'],
+      trust: ['मुफ्त साइट विजिट', '₹78,000 तक सब्सिडी', '25 साल की परफॉर्मेंस वारंटी'],
     },
     sections: {
       servicesEyebrow: 'हमारी सेवाएं',
@@ -479,6 +764,95 @@ export const messages = {
       finalTitle: 'बिजली बिल कम करने के लिए तैयार हैं?',
       finalSubtitle:
         'नाशिक के भरोसेमंद इंस्टॉलेशन विशेषज्ञों से मुफ्त साइट सर्वे और व्यक्तिगत सोलर कोट पाएं.',
+      // DEADLINE: पीएम सूर्य घर योजना की अंतिम तिथि — योजना समाप्त होने पर अपडेट/हटाएं.
+      deadlineText: 'पीएम सूर्य घर योजना 31 मार्च 2027 को बंद हो रही है — ₹78,000 तक सब्सिडी के लिए आज ही पंजीकरण करें.',
+      deadlineCta: 'अपनी सब्सिडी जांचें',
+      brandsEyebrow: 'भरोसेमंद ब्रांड',
+      brandsTitle: 'अग्रणी ब्रांडों के पैनल व उपकरण',
+    },
+    stats: {
+      values: ['₹78,000', '25 साल', '3–4 साल', '6.4%'],
+      labels: ['अधिकतम केंद्रीय सब्सिडी', 'परफॉर्मेंस वारंटी', 'निवेश वसूली अवधि', 'बैंक लोन ब्याज दर'],
+    },
+    why: {
+      titles: [
+        '₹78,000 तक सब्सिडी',
+        '6.4% ब्याज पर बैंक लोन',
+        'MSEB नियमों के अनुसार इंस्टॉलेशन',
+        '25 साल की परफॉर्मेंस वारंटी',
+        '3–4 साल में वसूली',
+        'अनुभवी तकनीशियन',
+        'तेज व पारदर्शी सेवा',
+        'बिक्री के बाद पूरा सपोर्ट',
+      ],
+      descriptions: [
+        'पीएम सूर्य घर योजना के तहत ₹78,000 तक सरकारी सब्सिडी, पूरी आवेदन प्रक्रिया में सहायता.',
+        'राष्ट्रीयकृत बैंकों से 6.4% ब्याज दर पर सोलर लोन — आवेदन में हमारी सहायता.',
+        'MSEB/MSEDCL नियमों के अनुसार इंस्टॉलेशन और पूरी नेट मीटरिंग सहायता.',
+        'टियर-1 पैनलों के साथ 25 साल तक की परफॉर्मेंस वारंटी.',
+        'बिजली बिल की बचत से सिर्फ 3–4 साल में निवेश वसूल करें.',
+        'सुरक्षित और उच्च गुणवत्ता वाले इंस्टॉलेशन के लिए कुशल, अनुभवी टीम.',
+        'पूछताछ से कमीशनिंग तक तेज, पारदर्शी और भरोसेमंद सेवा.',
+        'बिक्री के बाद पूरा सपोर्ट — सर्विस विजिट, AMC प्लान और तेज फॉल्ट रिस्पॉन्स.',
+      ],
+    },
+    systemTypes: {
+      eyebrow: 'सिस्टम प्रकार',
+      title: 'ऑन-ग्रिड, ऑफ-ग्रिड और हाइब्रिड विकल्प',
+      onGridTitle: 'ऑन-ग्रिड सोलर',
+      onGridDesc: 'नेट मीटरिंग के साथ ग्रिड से जुड़ा सिस्टम — अतिरिक्त बिजली MSEDCL को भेजें और बिल में क्रेडिट पाएं.',
+      offGridTitle: 'ऑफ-ग्रिड सोलर',
+      offGridDesc: 'अनियमित बिजली आपूर्ति वाले क्षेत्रों के लिए बैटरी बैकअप वाला स्वतंत्र सिस्टम — सौर बिजली स्टोर करें और कभी भी उपयोग करें.',
+      hybridTitle: 'हाइब्रिड सोलर',
+      hybridDesc: 'दोनों के फायदे — ग्रिड कनेक्शन के साथ बैटरी बैकअप, बिजली जाने पर भी निर्बाध आपूर्ति.',
+    },
+    netMetering: {
+      eyebrow: 'नेट मीटरिंग',
+      title: 'आपकी पूरी MSEDCL नेट मीटरिंग हम संभालते हैं',
+      description:
+        'नेट मीटरिंग से बची हुई सौर बिजली ग्रिड को भेजकर बिजली बिल में क्रेडिट मिलता है. MSEDCL आवेदन, दस्तावेज और मीटर इंस्टॉलेशन की पूरी प्रक्रिया हमारी टीम संभालती है.',
+      step1Title: 'आवेदन',
+      step1Desc: 'हम MSEDCL में आपका नेट मीटरिंग आवेदन तैयार कर दाखिल करते हैं.',
+      step2Title: 'मीटर इंस्टॉलेशन',
+      step2Desc: 'मंजूरी के बाद MSEDCL द्विदिश मीटर लगाता है.',
+      step3Title: 'बिल में क्रेडिट',
+      step3Desc: 'अतिरिक्त यूनिट हर महीने आपके बिल में समायोजित होती हैं.',
+    },
+    subsidy: {
+      heroTitle: 'नाशिक में सोलर सब्सिडी सहायता',
+      // DEADLINE: पीएम सूर्य घर योजना की अंतिम तिथि — योजना समाप्त होने पर अपडेट/हटाएं.
+      heroSubtitle:
+        'पीएम सूर्य घर योजना 31 मार्च 2027 को बंद हो रही है — बिना कागजी झंझट अधिकतम लाभ के लिए पूरी सब्सिडी आवेदन प्रक्रिया हम संभालते हैं.',
+      eyebrow: 'पीएम सूर्य घर मुफ्त बिजली योजना',
+      title: '₹78,000 तक केंद्रीय सब्सिडी पाएं',
+      subtitle: '3 किलोवाट तक के घरेलू रूफटॉप सोलर सिस्टम पीएम सूर्य घर योजना के तहत सब्सिडी के पात्र हैं.',
+      slabCapacities: ['1 किलोवाट तक', '2 किलोवाट', '3 किलोवाट व अधिक'],
+      disclaimer:
+        'सब्सिडी राशि सांकेतिक है और आवेदन के समय लागू सरकारी अधिसूचना के अनुसार बदल सकती है. मुफ्त परामर्श में हमारी टीम सटीक राशि बताती है.',
+      registeredBadge: 'पीएम सूर्य घर योजना के तहत पंजीकृत विक्रेता',
+      channelPartner: 'अधिकृत चैनल पार्टनर / सोलर EPC कॉन्ट्रैक्टर',
+      eligibilityTitle: 'पात्रता सूची',
+      eligibility: [
+        'वैध बिजली कनेक्शन वाला संपत्ति मालिक',
+        'अच्छी धूप वाली और बिना छाया वाली छत',
+        'अधिकतम केंद्रीय सब्सिडी के लिए 3 किलोवाट तक सिस्टम लगाने की इच्छा',
+        'वैध पहचान और संपत्ति स्वामित्व दस्तावेज',
+      ],
+      loanTitle: '6.4% ब्याज पर सोलर लोन',
+      loanDesc: 'राष्ट्रीयकृत बैंक 6.4% ब्याज दर पर सोलर लोन देते हैं — पूरे लोन आवेदन में हमारी टीम सहायता करती है.',
+      processEyebrow: 'आवेदन प्रक्रिया',
+      processTitle: 'हम आपका सब्सिडी आवेदन कैसे संभालते हैं',
+      stepTitles: ['पंजीकरण', 'दस्तावेज', 'इंस्टॉलेशन व निरीक्षण', 'राशि वितरण'],
+      stepDescriptions: [
+        'राष्ट्रीय सोलर पोर्टल पर हम आपका आवेदन पंजीकृत करते हैं.',
+        'पहचान, पते का प्रमाण और बिजली बिल जमा करना.',
+        'सिस्टम इंस्टॉलेशन के बाद DISCOM निरीक्षण.',
+        'सब्सिडी सीधे आपके बैंक खाते में जमा होती है.',
+      ],
+      kusumEyebrow: 'पीएम-कुसुम योजना',
+      kusumTitle: 'सोलर वॉटर पंप के लिए सब्सिडी',
+      kusumSubtitle: 'नाशिक जिले के किसान पीएम-कुसुम योजना के तहत सोलर सिंचाई पंपों पर सब्सिडी पा सकते हैं.',
+      kusumCta: 'सोलर वॉटर पंप के बारे में जानें',
     },
     forms: {
       quoteTitle: 'मुफ्त सोलर कोट लें',
@@ -501,7 +875,7 @@ export const messages = {
       contactSuccess: 'धन्यवाद! हमारा सोलर कंसल्टेंट 24 घंटों में संपर्क करेगा.',
       privacy: 'स्पैम नहीं. आपकी जानकारी केवल सोलर विकल्पों पर संपर्क के लिए उपयोग होती है.',
       there: 'दोस्त',
-      propertyOptions: ['घरेलू', 'व्यावसायिक', 'औद्योगिक'],
+      propertyOptions: ['घरेलू', 'व्यावसायिक'],
     },
     calculator: {
       averageBill: 'औसत मासिक बिजली बिल',
@@ -521,6 +895,35 @@ export const messages = {
       maintenance: { cta: 'सर्विस शेड्यूल करें' },
       amc: { cta: 'AMC प्लान के बारे में पूछें' },
       waterPump: { cta: 'सोलर पंप के बारे में पूछें' },
+      autoCleaning: { cta: 'ऑटो क्लीनिंग के बारे में पूछें' },
+      evCharging: { cta: 'EV चार्जिंग के बारे में पूछें' },
+      terms: {
+        title: 'नियम और शर्तें',
+        subtitle: 'सोलर प्लांट आपूर्ति व इंस्टॉलेशन — हमारे प्रस्तावों और इंस्टॉलेशन पर लागू शर्तें.',
+      },
+      about: {
+        heroTitle: 'एस.पी. एंटरप्राइजेस, नाशिक सोलर के बारे में',
+        heroSubtitle: 'घरों और व्यवसायों को स्वच्छ, किफायती सौर ऊर्जा की ओर ले जाने वाली नाशिक की स्थानीय टीम.',
+        storyEyebrow: 'हमारी कहानी',
+        storyTitle: 'नाशिक के सौर भविष्य के लिए प्रतिबद्ध स्थानीय टीम',
+        storyPara1:
+          'एस.पी. एंटरप्राइजेस, नाशिक सोलर एक अधिकृत चैनल पार्टनर और सोलर EPC कॉन्ट्रैक्टर है, जो पीएम सूर्य घर योजना के तहत पंजीकृत विक्रेता है. नाशिक और आसपास के हर घर और व्यवसाय तक स्वच्छ, भरोसेमंद सौर ऊर्जा पहुंचाना हमारा लक्ष्य है.',
+        storyPara2:
+          'आपकी सोलर यात्रा का हर चरण हम खुद संभालते हैं — मुफ्त साइट विजिट, सब्सिडी आवेदन, इंस्टॉलेशन, MSEDCL नेट मीटरिंग और दीर्घकालिक आफ्टर-सेल्स सेवा — ताकि आपको कई विक्रेताओं से न जूझना पड़े.',
+        valuesEyebrow: 'हमारे मूल्य',
+        valuesTitle: 'जो हमें हर दिन प्रेरित करता है',
+        valueTitles: ['पारदर्शिता', 'गुणवत्ता', 'विश्वसनीयता', 'स्थानीय फोकस'],
+        valueDescriptions: [
+          'स्पष्ट कीमत और ईमानदार सलाह — कोई छिपी लागत नहीं.',
+          'केवल टियर-1 पैनल और इन्वर्टर, सख्त सुरक्षा मानकों के अनुसार इंस्टॉलेशन.',
+          'समय पर इंस्टॉलेशन और तत्पर आफ्टर-सेल्स सपोर्ट, हमेशा.',
+          'नाशिक की जलवायु, टैरिफ और सब्सिडी प्रक्रियाओं की गहरी समझ.',
+        ],
+        teamEyebrow: 'प्रोप्राइटर से मिलें',
+        teamTitle: 'आगे बढ़कर नेतृत्व',
+        teamSubtitle: 'पहली साइट विजिट से अंतिम कमीशनिंग तक हर प्रोजेक्ट पर व्यक्तिगत ध्यान.',
+        proprietorRole: 'प्रोप्राइटर — अधिकृत चैनल पार्टनर / सोलर EPC कॉन्ट्रैक्टर',
+      },
     },
     services: {
       residentialSolar: {
@@ -561,6 +964,20 @@ export const messages = {
         shortDescription: 'नाशिक के खेतों के लिए सौर ऊर्जा से चलने वाले सिंचाई पंप.',
         description: 'PM-KUSUM सब्सिडी के तहत कृषि भूमि के लिए भरोसेमंद सोलर वॉटर पंपिंग सिस्टम, डीजल और बिजली खर्च कम करने के लिए.',
         features: ['PM-KUSUM सब्सिडी सहायता', 'DC और AC सबमर्सिबल पंप विकल्प', 'बोरवेल और कुएं के अनुसार साइजिंग', 'कम मेंटेनेंस डिजाइन', 'किसान प्रशिक्षण'],
+      },
+      autoCleaningSystem: {
+        title: 'ऑटो क्लीनिंग सिस्टम',
+        shortDescription: 'स्वचालित पैनल सफाई — अधिकतम बिजली उत्पादन, बिना मैनुअल मेहनत.',
+        description:
+          'स्वचालित सोलर पैनल क्लीनिंग सिस्टम पैनलों को साल भर धूल-मुक्त रखता है — परफॉर्मेंस में 5–20% सुधार, साथ में पानी, समय और मेहनत की बचत. मौजूदा प्लांट पर भी लगाया जा सकता है.',
+        features: ['पैनल हमेशा साफ — ज्यादा बिजली उत्पादन', 'परफॉर्मेंस में 5–20% तक सुधार', 'समय और मेहनत की बचत', 'कम पानी में ज्यादा सफाई', 'मौजूदा प्लांट पर लगाने योग्य'],
+      },
+      evCharging: {
+        title: 'EV चार्जिंग सॉल्यूशन्स',
+        shortDescription: 'घरों, सोसाइटियों और व्यवसायों के लिए EV चार्जर इंस्टॉलेशन.',
+        description:
+          'घरों, हाउसिंग सोसाइटियों और व्यावसायिक परिसरों के लिए सुरक्षित, पेशेवर EV चार्जिंग पॉइंट — रूफटॉप सोलर से चार्जिंग का विकल्प भी उपलब्ध.',
+        features: ['घर और सोसाइटी चार्जर इंस्टॉलेशन', 'सोलर-इंटीग्रेटेड चार्जिंग विकल्प', 'सुरक्षित, नियमानुसार वायरिंग', 'हर बजट के लिए AC चार्जर विकल्प', 'इंस्टॉलेशन के साथ आफ्टर-सेल्स सपोर्ट'],
       },
     },
     categories: {
