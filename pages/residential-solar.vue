@@ -30,7 +30,9 @@
       </v-container>
     </section>
 
-    <section class="section-py" style="background: #F8F9FA">
+    <CommonSystemTypesSection />
+
+    <section class="section-py">
       <v-container>
         <CommonSectionHeading
           eyebrow="Popular Sizes"
@@ -52,6 +54,7 @@
     </section>
 
     <HomeSavingsCalculator />
+    <CommonNetMeteringSection />
     <HomeProcessTimeline />
 
     <section class="section-py" style="background: #F8F9FA">

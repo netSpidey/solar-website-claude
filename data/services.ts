@@ -34,6 +34,7 @@ export const services: ServiceItem[] = [
     ],
   },
   {
+    // Not currently offered by S.P. Enterprises — hidden from nav/grids but kept for later re-enable.
     slug: 'industrial-solar',
     title: 'Industrial Solar',
     shortDescription: 'Large-scale ground-mount and rooftop systems for factories.',
@@ -41,12 +42,30 @@ export const services: ServiceItem[] = [
       'High-capacity solar solutions engineered for industrial power demand — MIDC factories, warehouses, and manufacturing units across Nashik, Sinnar, and Igatpuri.',
     icon: 'mdi-factory',
     image: '/assets/images/services/industrial-solar.jpg',
+    hidden: true,
     features: [
       'MW-scale system design & engineering',
       'Ground-mount & rooftop hybrid options',
       'Open access & group captive support',
       'Dedicated project management',
       'SCADA-based performance monitoring',
+    ],
+  },
+  {
+    slug: 'auto-cleaning-system',
+    title: 'Auto Cleaning System',
+    shortDescription: 'Automatic panel cleaning for maximum generation, zero manual effort.',
+    description:
+      'Automated solar panel cleaning systems that keep your panels dust-free year-round — improving generation by 5–20% while saving water, time, and labour. Can be retrofitted on existing plants.',
+    icon: 'mdi-sprinkler-variant',
+    // TODO: replace placeholder illustration with a real installation photo
+    image: '/assets/images/services/auto-cleaning-system.svg',
+    features: [
+      'Panels stay clean for maximum generation',
+      '5–20% improvement in performance',
+      'Saves time and manual labour',
+      'Water-saving cleaning cycles',
+      'Retrofit-friendly for existing plants',
     ],
   },
   {
@@ -96,6 +115,23 @@ export const services: ServiceItem[] = [
       'Sized for borewell & open well',
       'Low-maintenance design',
       'On-site farmer training',
+    ],
+  },
+  {
+    slug: 'ev-charging',
+    title: 'EV Charging Solutions',
+    shortDescription: 'EV charger installation for homes, societies, and businesses.',
+    description:
+      'Safe, professionally installed EV charging points for homes, housing societies, and commercial premises — with the option to power your charging from rooftop solar.',
+    icon: 'mdi-ev-station',
+    // TODO: replace placeholder illustration with a real installation photo
+    image: '/assets/images/services/ev-charging.svg',
+    features: [
+      'Home & society charger installation',
+      'Solar-integrated charging options',
+      'Safe, code-compliant wiring',
+      'AC charger options for every budget',
+      'Installation with after-sales support',
     ],
   },
 ]

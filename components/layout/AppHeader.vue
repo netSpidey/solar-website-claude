@@ -8,7 +8,11 @@
   >
     <v-container class="d-flex align-center py-0" fluid>
       <NuxtLink :to="localePath('/')" class="d-flex align-center text-decoration-none mr-4">
-        <img src="/assets/images/logo.svg" :alt="`${companyInfo.name} logo`" height="44" width="172" />
+        <img src="/assets/images/logo1.png" :alt="`${companyInfo.name} logo`" height="56" />
+        <div class="ml-2 d-none d-sm-block" style="line-height: 1.15">
+          <div class="text-subtitle-1 font-weight-bold" style="color: #0B1F3A">{{ t('company.brandLine1') }}</div>
+          <div class="text-caption font-weight-medium" style="color: #43A047">{{ t('company.brandLine2') }}</div>
+        </div>
       </NuxtLink>
 
       <v-spacer />
@@ -69,8 +73,12 @@
   </v-app-bar>
 
   <v-navigation-drawer v-model="drawer" location="right" temporary width="300">
-    <div class="pa-4">
-      <img src="/assets/images/logo.svg" :alt="`${companyInfo.name} logo`" height="40" />
+    <div class="pa-4 d-flex align-center">
+      <img src="/assets/images/logo1.png" :alt="`${companyInfo.name} logo`" height="44" />
+      <div class="ml-2" style="line-height: 1.15">
+        <div class="text-body-2 font-weight-bold" style="color: #0B1F3A">{{ t('company.brandLine1') }}</div>
+        <div class="text-caption font-weight-medium" style="color: #43A047">{{ t('company.brandLine2') }}</div>
+      </div>
     </div>
     <v-divider />
     <v-list nav>

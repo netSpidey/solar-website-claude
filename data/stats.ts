@@ -1,41 +1,55 @@
 import type { TrustStat, WhyChooseUsItem } from './types'
 
+// English base values — labels/values are localized by index via `stats.values`/`stats.labels`
+// in locales/messages.ts (keep array lengths in sync across en/mr/hi).
 export const trustStats: TrustStat[] = [
-  { label: 'Happy Customers', value: '500+', icon: 'mdi-emoticon-happy-outline' },
-  { label: 'Installed Capacity', value: '12 MW+', icon: 'mdi-solar-power-variant-outline' },
-  { label: 'Panel Warranty', value: '25 Years', icon: 'mdi-shield-check-outline' },
-  { label: 'Customer Satisfaction', value: '98%', icon: 'mdi-star-outline' },
+  { label: 'Max Central Subsidy', value: '₹78,000', icon: 'mdi-cash-multiple' },
+  { label: 'Performance Warranty', value: '25 Years', icon: 'mdi-shield-check-outline' },
+  { label: 'Typical Payback', value: '3–4 Years', icon: 'mdi-chart-line' },
+  { label: 'Bank Loan Interest', value: '6.4%', icon: 'mdi-bank-outline' },
 ]
 
+// The 8 USPs from the S.P. Enterprises flyer. Titles/descriptions are localized by index
+// via `why.titles`/`why.descriptions` in locales/messages.ts (keep lengths in sync ×3 locales).
 export const whyChooseUs: WhyChooseUsItem[] = [
   {
-    title: 'Free Site Survey',
-    description: 'Detailed on-site assessment of your roof and consumption pattern, at no cost.',
-    icon: 'mdi-map-marker-check-outline',
+    title: 'Subsidy up to ₹78,000',
+    description: 'Government subsidy up to ₹78,000 under PM Surya Ghar Yojana, with complete application support.',
+    icon: 'mdi-cash-multiple',
   },
   {
-    title: 'Government Subsidy Assistance',
-    description: 'End-to-end support for PM Surya Ghar and other applicable subsidy schemes.',
+    title: 'Bank Loans at 6.4%',
+    description: 'Nationalised-bank solar loans at 6.4% interest — we assist with the application.',
     icon: 'mdi-bank-outline',
   },
   {
-    title: 'Net Metering Support',
-    description: 'We manage the entire net metering application process with MSEDCL for you.',
+    title: 'MSEB-Compliant Installation',
+    description: 'Installation as per MSEB/MSEDCL norms with complete net metering support.',
     icon: 'mdi-transmission-tower',
   },
   {
-    title: 'Professional Installation',
-    description: 'Certified in-house technicians follow strict safety and quality standards.',
+    title: '25-Year Performance Warranty',
+    description: 'Tier-1 panels with up to 25-year performance warranty.',
+    icon: 'mdi-shield-check-outline',
+  },
+  {
+    title: 'Payback in 3–4 Years',
+    description: 'Recover your investment in just 3–4 years through electricity bill savings.',
+    icon: 'mdi-chart-line',
+  },
+  {
+    title: 'Experienced Technicians',
+    description: 'Skilled, experienced team for safe and high-quality installation.',
     icon: 'mdi-account-hard-hat-outline',
   },
   {
-    title: 'Premium Solar Panels',
-    description: 'Tier-1 panels and inverters sourced from trusted, long-warranty manufacturers.',
-    icon: 'mdi-solar-panel',
+    title: 'Fast & Transparent Service',
+    description: 'Quick, transparent, and reliable service from enquiry to commissioning.',
+    icon: 'mdi-lightning-bolt-outline',
   },
   {
-    title: 'After-Sales Support',
-    description: 'Dedicated maintenance and AMC plans to keep your system performing for decades.',
+    title: 'Complete After-Sales Support',
+    description: 'Full support after the sale — service visits, AMC plans, and quick fault response.',
     icon: 'mdi-headset',
   },
 ]

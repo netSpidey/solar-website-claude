@@ -1,5 +1,6 @@
 import type { TestimonialItem } from './types'
 
+// PLACEHOLDER testimonials — replace with real S.P. Enterprises customer quotes before go-live.
 export const testimonials: TestimonialItem[] = [
   {
     id: 't1',
@@ -33,12 +34,12 @@ export const testimonials: TestimonialItem[] = [
   },
   {
     id: 't4',
-    name: 'Prakash Industries',
-    location: 'Ambad MIDC, Nashik',
+    name: 'Prakash Traders',
+    location: 'Ambad, Nashik',
     rating: 5,
     quote:
-      'Their industrial team managed our 250 kW rooftop project end-to-end with zero downtime to our production line. Great monitoring dashboard too.',
-    systemSize: '250 kW Industrial',
+      'They managed our 25 kW rooftop project for the office and godown end-to-end with no disruption to our daily work. Great monitoring app too.',
+    systemSize: '25 kW Commercial',
     avatar: '/assets/images/testimonials/avatar-4.svg',
   },
   {

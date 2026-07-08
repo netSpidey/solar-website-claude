@@ -1,35 +1,23 @@
-import type { NavLink } from './types'
-
-export const mainNav: NavLink[] = [
-  { title: 'Home', to: '/' },
-  { title: 'About Us', to: '/about' },
-  { title: 'Residential Solar', to: '/residential-solar' },
-  { title: 'Commercial Solar', to: '/commercial-solar' },
-  { title: 'Industrial Solar', to: '/industrial-solar' },
-  { title: 'Solar Subsidy', to: '/solar-subsidy' },
-  { title: 'Projects', to: '/projects' },
-  { title: 'Blog', to: '/blog' },
-  { title: 'FAQs', to: '/faqs' },
-  { title: 'Contact Us', to: '/contact' },
-]
-
 export const companyInfo = {
-  name: 'Suryoday Solar Nashik',
-  tagline: 'Clean Energy for a Brighter Nashik',
-  phone: '+91 98765 43210',
-  phoneDisplay: '+91 98765 43210',
-  whatsapp: '919876543210',
-  email: 'info@suryodaysolarnashik.in',
-  address: 'Plot No. 14, College Road, Nashik, Maharashtra 422005',
+  name: 'S.P. Enterprises, Nashik Solar',
+  tagline: 'Surya Ki Shakti, Ghar Ki Bachat.',
+  proprietor: 'Sachin Pawar',
+  phone: '+91 78876 72707',
+  phoneDisplay: '+91 78876 72707',
+  whatsapp: '917887672707',
+  // Spelling "spenterprices" is as printed on the client's flyer — confirm with client before go-live.
+  email: 'sachinpawar461883@gmail.com',
+  address:
+    'Flat No. A-401, Aaradhya Residency, Phase-2, Aanand Nagar, Near Kadam Lawns, Nashik Road, Nashik - 422101',
+  // TODO: replace with pinned Google Business Profile embed once the listing exists
   mapEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59921.0!2d73.7898!3d19.9975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU5JzUxLjAiTiA3M8KwNDcnMjMuMyJF!5e0!3m2!1sen!2sin!4v1700000000000',
-  gstin: '27ABCDE1234F1Z5',
+    'https://www.google.com/maps?q=Aaradhya+Residency+Phase+2+Aanand+Nagar+Nashik+Road+Nashik+422101&output=embed',
+  gstin: '27AXDPP4007A1ZZ',
   workingHours: 'Mon - Sat: 9:30 AM - 7:00 PM',
 }
 
-export const socialLinks = [
-  { title: 'Facebook', icon: 'mdi-facebook', href: 'https://facebook.com' },
-  { title: 'Instagram', icon: 'mdi-instagram', href: 'https://instagram.com' },
-  { title: 'YouTube', icon: 'mdi-youtube', href: 'https://youtube.com' },
-  { title: 'LinkedIn', icon: 'mdi-linkedin', href: 'https://linkedin.com' },
-]
+// Real profile URLs not provided yet — add entries here when the client shares them.
+// { title: 'Facebook', icon: 'mdi-facebook', href: '' },
+// { title: 'Instagram', icon: 'mdi-instagram', href: '' },
+// { title: 'YouTube', icon: 'mdi-youtube', href: '' },
+export const socialLinks: { title: string; icon: string; href: string }[] = []

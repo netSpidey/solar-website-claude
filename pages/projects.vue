@@ -16,7 +16,7 @@
             class="font-weight-medium"
             @click="activeFilter = filter"
           >
-            {{ filter }}
+            {{ filter === 'All' ? t('common.all') : translateCategory(filter) }}
           </v-chip>
         </div>
 
@@ -36,19 +36,24 @@
 <script setup lang="ts">
 import { projects } from '~/data/projects'
 
-const filters = ['All', 'Residential', 'Commercial', 'Industrial'] as const
+const { t } = useI18n()
+const { translateCategory } = useLocalizedContent()
+
+const filters = ['All', 'Residential', 'Commercial'] as const
 const activeFilter = ref<(typeof filters)[number]>('All')
 
+const visibleProjects = projects.filter((p) => p.propertyType !== 'Industrial')
+
 const filteredProjects = computed(() =>
-  activeFilter.value === 'All' ? projects : projects.filter((p) => p.propertyType === activeFilter.value)
+  activeFilter.value === 'All' ? visibleProjects : visibleProjects.filter((p) => p.propertyType === activeFilter.value)
 )
 
 useSeoMeta({
   title: 'Solar Installation Projects in Nashik',
   description:
-    'Browse our portfolio of completed residential, commercial, and industrial solar installation projects across Nashik, Maharashtra.',
+    'Browse our portfolio of completed residential and commercial solar installation projects across Nashik, Maharashtra.',
   ogTitle: 'Solar Projects — Nashik',
-  ogDescription: 'Residential, commercial, and industrial solar installations completed across Nashik.',
+  ogDescription: 'Residential and commercial solar installations completed across Nashik.',
   keywords: 'solar projects Nashik, solar installation portfolio Nashik, solar case studies Maharashtra',
 })
 </script>

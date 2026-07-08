@@ -3,11 +3,13 @@
     <v-container>
       <v-row>
         <v-col cols="12" md="4">
-          <img src="/assets/images/logo.svg" :alt="`${companyInfo.name} logo`" height="40" class="mb-4 footer-logo" />
+          <div class="footer-logo d-inline-flex align-center pa-2 mb-4">
+            <img src="/assets/images/logo1.png" :alt="`${companyInfo.name} logo`" height="64" />
+          </div>
           <p class="text-body-2 text-white opacity-80 mb-4">
             {{ t('company.footerAbout') }}
           </p>
-          <div class="d-flex ga-2">
+          <div v-if="socialLinks.length" class="d-flex ga-2">
             <v-btn
               v-for="social in socialLinks"
               :key="social.title"
@@ -80,7 +82,10 @@
 
       <div class="d-flex flex-column flex-md-row justify-space-between align-center ga-2 text-caption text-white opacity-70">
         <span>&copy; {{ year }} {{ companyInfo.name }}. {{ t('common.rights') }}</span>
-        <span>{{ t('common.gstin') }}: {{ companyInfo.gstin }} · Nashik, Maharashtra, India</span>
+        <span class="d-flex align-center ga-3">
+          <NuxtLink :to="localePath('/terms-and-conditions')" class="footer-link">{{ t('footer.terms') }}</NuxtLink>
+          <span>{{ t('common.gstin') }}: {{ companyInfo.gstin }} · Nashik, Maharashtra, India</span>
+        </span>
       </div>
     </v-container>
   </v-footer>
@@ -98,7 +103,8 @@ const { navLinks, services } = useLocalizedContent()
 
 <style scoped lang="scss">
 .footer-logo {
-  filter: brightness(0) invert(1);
+  background: #ffffff;
+  border-radius: 12px;
 }
 
 .footer-list {

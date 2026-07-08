@@ -1,3 +1,9 @@
+<!--
+  Hidden since 2026-07: S.P. Enterprises does not currently offer industrial solar.
+  Page stays routable by direct URL only. To re-enable: remove `hidden: true` from the
+  industrial entry in data/services.ts, restore the nav.industrial link in
+  composables/useLocalizedContent.ts, and drop the noindex below.
+-->
 <template>
   <div>
     <CommonPageHero
@@ -52,7 +58,7 @@
 
     <HomeProcessTimeline />
 
-    <section class="section-py" style="background: #F8F9FA">
+    <section v-if="industrialProjects.length" class="section-py" style="background: #F8F9FA">
       <v-container>
         <CommonSectionHeading eyebrow="Case Studies" title="Recent Industrial Installations" center max-width="600px" />
         <v-row class="mt-8">
@@ -89,5 +95,6 @@ useSeoMeta({
   ogTitle: 'Industrial Solar Power Plants — Nashik',
   ogDescription: 'High-capacity solar EPC solutions for factories and industrial units in Nashik.',
   keywords: 'industrial solar Nashik, solar EPC Nashik, MIDC solar Nashik, factory solar power plant Maharashtra',
+  robots: 'noindex',
 })
 </script>

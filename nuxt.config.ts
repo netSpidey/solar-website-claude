@@ -14,14 +14,14 @@ export default defineNuxtConfig({
     buildAssetsDir: '_nuxt/',
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      titleTemplate: '%s | Suryoday Solar Nashik',
+      titleTemplate: '%s | S.P. Enterprises, Nashik Solar',
       htmlAttrs: { lang: 'mr' },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'author',
-          content: 'Suryoday Solar Nashik',
+          content: 'S.P. Enterprises, Nashik Solar',
         },
       ],
       link: [

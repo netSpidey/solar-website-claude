@@ -17,7 +17,7 @@ export const faqs: FaqItem[] = [
     category: 'Subsidy',
     question: 'Am I eligible for government solar subsidy?',
     answer:
-      'Residential rooftop systems up to 3 kW are eligible for subsidy under the PM Surya Ghar Muft Bijli Yojana. We handle the complete subsidy application and documentation on your behalf.',
+      'Residential rooftop systems up to 3 kW are eligible for subsidy under the PM Surya Ghar Muft Bijli Yojana. The scheme is open until 31 March 2027, so register early. We handle the complete subsidy application and documentation on your behalf.',
   },
   {
     category: 'Subsidy',

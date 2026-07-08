@@ -11,9 +11,11 @@ const serviceKeyBySlug: Record<string, string> = {
   'residential-solar': 'residentialSolar',
   'commercial-solar': 'commercialSolar',
   'industrial-solar': 'industrialSolar',
+  'auto-cleaning-system': 'autoCleaningSystem',
   'solar-maintenance': 'solarMaintenance',
   'solar-amc': 'solarAmc',
   'solar-water-pump': 'solarWaterPump',
+  'ev-charging': 'evCharging',
 }
 
 export function useLocalizedContent() {
@@ -24,7 +26,6 @@ export function useLocalizedContent() {
     { title: t('nav.about'), to: '/about' },
     { title: t('nav.residential'), to: '/residential-solar' },
     { title: t('nav.commercial'), to: '/commercial-solar' },
-    { title: t('nav.industrial'), to: '/industrial-solar' },
     { title: t('nav.subsidy'), to: '/solar-subsidy' },
     { title: t('nav.projects'), to: '/projects' },
     { title: t('nav.blog'), to: '/blog' },
@@ -32,7 +33,8 @@ export function useLocalizedContent() {
     { title: t('nav.contact'), to: '/contact' },
   ])
 
-  const services = computed<ServiceItem[]>(() =>
+  // Includes hidden services so their pages keep working when visited directly.
+  const allServices = computed<ServiceItem[]>(() =>
     baseServices.map((service) => {
       const key = serviceKeyBySlug[service.slug]
       const features = tm(`services.${key}.features`) as string[]
@@ -47,7 +49,9 @@ export function useLocalizedContent() {
     })
   )
 
-  const getServiceBySlug = (slug: string) => computed(() => services.value.find((service) => service.slug === slug))
+  const services = computed<ServiceItem[]>(() => allServices.value.filter((service) => !service.hidden))
+
+  const getServiceBySlug = (slug: string) => computed(() => allServices.value.find((service) => service.slug === slug))
 
   const translateCategory = (category: string) => t(`categories.${category}`, category)
 
@@ -59,8 +63,27 @@ export function useLocalizedContent() {
   )
 
   const processSteps = computed<ProcessStep[]>(() => baseProcessSteps)
-  const trustStats = computed<TrustStat[]>(() => baseTrustStats)
-  const whyChooseUs = computed<WhyChooseUsItem[]>(() => baseWhyChooseUs)
+
+  // Localized by index — array lengths must match across locales (see messages.ts).
+  const trustStats = computed<TrustStat[]>(() => {
+    const values = tm('stats.values') as string[]
+    const labels = tm('stats.labels') as string[]
+    return baseTrustStats.map((stat, index) => ({
+      ...stat,
+      value: values[index] || stat.value,
+      label: labels[index] || stat.label,
+    }))
+  })
+
+  const whyChooseUs = computed<WhyChooseUsItem[]>(() => {
+    const titles = tm('why.titles') as string[]
+    const descriptions = tm('why.descriptions') as string[]
+    return baseWhyChooseUs.map((item, index) => ({
+      ...item,
+      title: titles[index] || item.title,
+      description: descriptions[index] || item.description,
+    }))
+  })
   const faqs = computed<FaqItem[]>(() => baseFaqs)
   const testimonials = computed<TestimonialItem[]>(() => baseTestimonials)
   const blogPosts = computed<BlogPost[]>(() => baseBlogPosts)
