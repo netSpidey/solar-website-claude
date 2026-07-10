@@ -1,12 +1,10 @@
 <template>
   <div class="section-heading" :class="{ 'text-center mx-auto': center }" :style="center ? `max-width: ${maxWidth}` : undefined">
-    <v-chip v-if="eyebrow" color="accent" variant="flat" size="small" class="mb-3 font-weight-bold">
-      {{ eyebrow }}
-    </v-chip>
-    <h2 class="text-h4 text-md-h3 font-weight-bold" style="color: #0B1F3A">
+    <span v-if="eyebrow" class="section-heading__eyebrow">{{ eyebrow }}</span>
+    <h2 class="section-heading__title text-h4 text-md-h3 font-weight-bold">
       {{ title }}
     </h2>
-    <p v-if="subtitle" class="text-body-1 mt-3" style="color: #616161">
+    <p v-if="subtitle" class="section-heading__subtitle text-body-1 mt-3">
       {{ subtitle }}
     </p>
   </div>
@@ -27,3 +25,28 @@ withDefaults(
   }
 )
 </script>
+
+<style scoped lang="scss">
+.section-heading__eyebrow {
+  display: inline-block;
+  padding: 5px 14px;
+  margin-bottom: 14px;
+  border-radius: var(--radius-pill);
+  background: var(--color-amber-soft);
+  color: var(--color-navy);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-heading__title {
+  color: var(--text-strong);
+  line-height: 1.2;
+}
+
+.section-heading__subtitle {
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+</style>

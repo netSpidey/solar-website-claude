@@ -1,34 +1,49 @@
 <template>
   <section class="hero" :style="heroStyle">
-    <v-container class="py-10 py-md-16">
-      <v-row align="center" class="ga-0">
+    <v-container class="py-10 py-md-16 hero__container">
+      <v-row align="center">
         <v-col cols="12" md="7" class="pr-md-8">
-          <v-chip color="accent" variant="flat" size="small" class="mb-4 font-weight-bold">
-            {{ t('hero.badge') }}
-          </v-chip>
-          <h1 class="text-h3 text-md-h2 font-weight-bold text-white" style="line-height: 1.15">
+          <div class="hero__badge">
+            <v-icon icon="mdi-shield-check" size="18" color="accent" />
+            <span>{{ t('hero.badge') }}</span>
+          </div>
+
+          <h1 class="hero__title mt-5">
             {{ t('hero.titlePrefix') }}
             <span class="text-gradient-solar">{{ t('hero.titleHighlight') }}</span>
           </h1>
-          <p class="text-body-1 text-md-h6 font-weight-regular text-white opacity-80 mt-5" style="max-width: 560px">
+
+          <p class="hero__subtitle mt-5">
             {{ t('hero.subtitle') }}
           </p>
 
           <div class="d-flex flex-wrap ga-3 mt-8">
-            <v-btn color="accent" size="x-large" class="text-deep-navy" prepend-icon="mdi-calculator-variant-outline" to="#savings-calculator">
+            <v-btn
+              color="accent"
+              size="x-large"
+              variant="flat"
+              prepend-icon="mdi-calculator-variant-outline"
+              to="#savings-calculator"
+            >
               {{ t('hero.calculate') }}
             </v-btn>
-            <v-btn color="white" variant="outlined" size="x-large" prepend-icon="mdi-phone-outline" :href="phoneHref">
+            <v-btn
+              color="white"
+              variant="outlined"
+              size="x-large"
+              prepend-icon="mdi-phone-outline"
+              :href="phoneHref"
+            >
               {{ t('hero.expert') }}
             </v-btn>
           </div>
 
-          <div class="d-flex flex-wrap ga-6 mt-10">
-            <div v-for="point in trustPoints" :key="point" class="d-flex align-center ga-2">
-              <v-icon icon="mdi-check-circle" color="secondary" size="20" />
-              <span class="text-body-2 text-white opacity-90">{{ point }}</span>
-            </div>
-          </div>
+          <ul class="hero__trust mt-8">
+            <li v-for="point in trustPoints" :key="point" class="hero__trust-chip">
+              <v-icon icon="mdi-check-circle" color="secondary" size="18" />
+              <span>{{ point }}</span>
+            </li>
+          </ul>
         </v-col>
 
         <v-col cols="12" md="5" class="mt-10 mt-md-0">
@@ -58,6 +73,7 @@ const trustPoints = computed(() => tm('hero.trust') as string[])
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  background-color: var(--color-navy); // paints before the photo loads
 
   &::after {
     content: '';
@@ -66,5 +82,62 @@ const trustPoints = computed(() => tm('hero.trust') as string[])
     background-image: radial-gradient(circle at 85% 15%, rgba(255, 193, 7, 0.18), transparent 45%);
     pointer-events: none;
   }
+}
+
+.hero__container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--text-on-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.015em;
+  color: var(--text-on-dark);
+  max-width: 640px;
+}
+
+.hero__subtitle {
+  color: var(--text-on-dark-muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.hero__trust {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero__trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 15px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--text-on-dark);
+  font-size: 0.88rem;
+  font-weight: 600;
 }
 </style>

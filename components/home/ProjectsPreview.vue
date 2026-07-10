@@ -1,5 +1,5 @@
 <template>
-  <section class="section-py" style="background: #F8F9FA">
+  <section class="section-py">
     <v-container>
       <div class="d-flex flex-column flex-md-row justify-space-between align-md-end mb-2">
         <CommonSectionHeading

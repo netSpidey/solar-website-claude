@@ -18,8 +18,9 @@ export default defineNuxtPlugin((nuxtApp) => {
             primary: '#0B1F3A',
             secondary: '#43A047',
             accent: '#FFC107',
-            background: '#F8F9FA',
+            background: '#FFFFFF',
             surface: '#FFFFFF',
+            'surface-alt': '#F3F7FC',
             'on-primary': '#FFFFFF',
             'on-secondary': '#FFFFFF',
             'on-accent': '#0B1F3A',
@@ -36,11 +37,13 @@ export default defineNuxtPlugin((nuxtApp) => {
     },
     defaults: {
       VBtn: {
-        rounded: 'lg',
+        rounded: 'pill',
         style: 'text-transform: none; letter-spacing: normal; font-weight: 600;',
       },
+      // Card radius comes from main.scss (.v-card → var(--radius-xl)) so it
+      // can be themed via tokens.scss.
       VCard: {
-        rounded: 'xl',
+        flat: false,
       },
       VTextField: {
         variant: 'outlined',

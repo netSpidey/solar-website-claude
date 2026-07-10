@@ -1,0 +1,58 @@
+@use 'variables' as *;
+
+// Design tokens — the single theming surface for the whole site.
+// Components should style against these custom properties (var(--…)) so the
+// site can be rethemed by editing this file alone. Build-time SCSS colors
+// live in variables.scss and are interpolated here to keep the two in sync.
+:root {
+  // Brand
+  --color-navy: #{$deep-navy};
+  --color-navy-soft: #12305c; // gradient partner / hover on navy
+  --color-navy-100: #dbe6f5; // navy tint for icon chips on light surfaces
+  --color-amber: #{$solar-yellow};
+  --color-amber-strong: #f5a700; // CTA hover
+  --color-amber-soft: #fff4d6; // amber tint backgrounds
+  --color-green: #{$solar-green};
+  --color-green-strong: #2e7d32;
+
+  // Surfaces
+  --surface-page: #ffffff;
+  --surface-alt: #f3f7fc; // light blue-grey section alternation
+  --surface-alt-strong: #e8f0fa;
+  --surface-navy: var(--color-navy);
+
+  // Text
+  --text-strong: #101c33;
+  --text-body: #33415c;
+  --text-muted: #5d6b85;
+  --text-on-dark: #ffffff;
+  --text-on-dark-muted: rgba(255, 255, 255, 0.78);
+
+  // Borders
+  --border-soft: rgba(11, 31, 58, 0.08);
+  --border-strong: rgba(11, 31, 58, 0.16);
+
+  // Radii
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  // Layered soft shadows
+  --shadow-sm: 0 1px 2px rgba(11, 31, 58, 0.05), 0 2px 8px rgba(11, 31, 58, 0.06);
+  --shadow-md: 0 2px 6px rgba(11, 31, 58, 0.06), 0 10px 24px rgba(11, 31, 58, 0.09);
+  --shadow-lg: 0 4px 10px rgba(11, 31, 58, 0.07), 0 24px 48px rgba(11, 31, 58, 0.13);
+
+  // Typography — Poppins & Mukta both cover Latin + Devanagari (mr/hi/en)
+  --font-heading: 'Poppins', 'Mukta', 'Segoe UI', sans-serif;
+  --font-body: 'Mukta', 'Segoe UI', sans-serif;
+
+  // Vertical rhythm
+  --section-py: 96px;
+}
+
+@media (max-width: 960px) {
+  :root {
+    --section-py: 56px;
+  }
+}

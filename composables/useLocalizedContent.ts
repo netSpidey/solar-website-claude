@@ -33,6 +33,19 @@ export function useLocalizedContent() {
     { title: t('nav.contact'), to: '/contact' },
   ])
 
+  // Header nav: service pages are grouped under a "Services" dropdown, the
+  // rest render as top-level links. `exact` marks links that should only
+  // highlight on an exact route match (home would otherwise match everything).
+  const mainNavLinks = computed(() => [
+    { title: t('nav.home'), to: '/', exact: true },
+    { title: t('nav.about'), to: '/about' },
+    { title: t('nav.subsidy'), to: '/solar-subsidy' },
+    { title: t('nav.projects'), to: '/projects' },
+    { title: t('nav.blog'), to: '/blog' },
+    { title: t('nav.faqs'), to: '/faqs' },
+    { title: t('nav.contact'), to: '/contact' },
+  ])
+
   // Includes hidden services so their pages keep working when visited directly.
   const allServices = computed<ServiceItem[]>(() =>
     baseServices.map((service) => {
@@ -91,6 +104,7 @@ export function useLocalizedContent() {
 
   return {
     navLinks,
+    mainNavLinks,
     services,
     getServiceBySlug,
     projects,

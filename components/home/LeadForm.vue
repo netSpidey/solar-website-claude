@@ -1,8 +1,8 @@
 <template>
-  <v-card class="lead-form-card pa-6 pa-md-8" elevation="12">
+  <v-card class="lead-form-card pa-6 pa-md-8" elevation="0">
     <div class="mb-5">
-      <h3 class="text-h5 font-weight-bold" style="color: #0B1F3A">{{ t('forms.quoteTitle') }}</h3>
-      <p class="text-body-2 mt-1" style="color: #616161">
+      <h3 class="text-h5 font-weight-bold lead-form-card__title">{{ t('forms.quoteTitle') }}</h3>
+      <p class="text-body-2 mt-1 lead-form-card__subtitle">
         {{ t('forms.quoteSubtitle') }}
       </p>
     </div>
@@ -36,7 +36,7 @@
         {{ t('forms.submitQuote') }}
       </v-btn>
 
-      <p class="text-caption text-center mt-3 mb-0" style="color: #9e9e9e">
+      <p class="text-caption text-center mt-3 mb-0 lead-form-card__privacy">
         {{ t('forms.privacy') }}
       </p>
     </v-form>
@@ -89,6 +89,21 @@ async function handleSubmit() {
 <style scoped lang="scss">
 .lead-form-card {
   border-radius: 24px;
-  background: #ffffff;
+  background: var(--surface-page);
+  border: 1px solid var(--border-soft);
+  border-top: 4px solid var(--color-amber);
+  box-shadow: var(--shadow-lg);
+
+  &__title {
+    color: var(--color-navy);
+  }
+
+  &__subtitle {
+    color: var(--text-muted);
+  }
+
+  &__privacy {
+    color: var(--text-muted);
+  }
 }
 </style>

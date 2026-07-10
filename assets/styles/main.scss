@@ -1,11 +1,114 @@
 @use 'variables' as *;
+@use 'tokens';
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
-// Nuxt route (page) transition — applied via app.pageTransition in nuxt.config.ts
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  color: var(--text-body);
+  background-color: var(--surface-page);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+// ---------------------------------------------------------------------------
+// Typography — Poppins for headings, Mukta for body (both cover Devanagari).
+// Vuetify's precompiled styles hardcode Roboto, so the overrides need
+// !important to win against .v-application/.text-h* rules.
+// ---------------------------------------------------------------------------
+.v-application {
+  font-family: var(--font-body) !important;
+  color: var(--text-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--text-strong);
+}
+
+.v-application .text-h1,
+.v-application .text-h2,
+.v-application .text-h3,
+.v-application .text-h4,
+.v-application .text-h5,
+.v-application .text-h6 {
+  font-family: var(--font-heading) !important;
+  letter-spacing: -0.01em !important;
+}
+
+.v-btn {
+  font-family: var(--font-body);
+}
+
+// Visible focus for keyboard users (WCAG 2.4.7)
+:focus-visible {
+  outline: 3px solid var(--color-amber-strong);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+// ---------------------------------------------------------------------------
+// Cards & buttons — 16–20px radii, soft layered shadows
+// ---------------------------------------------------------------------------
+.v-card {
+  border-radius: var(--radius-xl);
+}
+
+.card-soft {
+  background: var(--surface-page);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Section rhythm & background alternation (white / light blue-grey / navy)
+// ---------------------------------------------------------------------------
+.section-py {
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+
+.bg-section-alt {
+  background-color: var(--surface-alt);
+}
+
+.bg-navy-gradient {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-soft) 100%);
+}
+
+.text-gradient-solar {
+  background: linear-gradient(90deg, var(--color-amber) 0%, var(--color-amber-strong) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// ---------------------------------------------------------------------------
+// Motion — page transitions & scroll reveals (disabled for reduced motion)
+// ---------------------------------------------------------------------------
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.32s ease, transform 0.32s ease;
@@ -21,43 +124,6 @@ html {
   transform: translateY(-12px) scale(0.99);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .page-enter-active,
-  .page-leave-active {
-    transition: none;
-  }
-}
-
-body {
-  color: $text-color;
-  background-color: $light-bg;
-  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  overflow-x: hidden;
-}
-
-.section-py {
-  padding-top: 72px;
-  padding-bottom: 72px;
-}
-
-@media (max-width: 960px) {
-  .section-py {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-}
-
-.text-gradient-solar {
-  background: linear-gradient(90deg, $solar-yellow 0%, #FFB300 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.bg-navy-gradient {
-  background: linear-gradient(135deg, $deep-navy 0%, #12305c 100%);
-}
-
 .fade-up-enter-active,
 .fade-up-appear-active {
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -67,15 +133,6 @@ body {
 .fade-up-appear-from {
   opacity: 0;
   transform: translateY(24px);
-}
-
-.hover-lift {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(11, 31, 58, 0.12);
-  }
 }
 
 .reveal {
@@ -89,6 +146,36 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .page-enter-active,
+  .page-leave-active,
+  .fade-up-enter-active,
+  .fade-up-appear-active {
+    transition: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hover-lift {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
 .rounded-xxl {
   border-radius: 28px !important;
+}
+
+// Reserve room for the fixed mobile Call/WhatsApp bar (FloatingContactButtons)
+@media (max-width: 959.98px) {
+  .v-main {
+    padding-bottom: calc(54px + env(safe-area-inset-bottom));
+  }
 }
