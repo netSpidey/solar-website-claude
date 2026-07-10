@@ -23,6 +23,7 @@ export const messages = {
     nav: {
       home: 'Home',
       about: 'About Us',
+      services: 'Services',
       residential: 'Residential Solar',
       commercial: 'Commercial Solar',
       industrial: 'Industrial Solar',
@@ -389,6 +390,7 @@ export const messages = {
     nav: {
       home: 'मुख्यपृष्ठ',
       about: 'आमच्याबद्दल',
+      services: 'सेवा',
       residential: 'घरगुती सोलर',
       commercial: 'व्यावसायिक सोलर',
       industrial: 'औद्योगिक सोलर',
@@ -703,6 +705,7 @@ export const messages = {
     nav: {
       home: 'होम',
       about: 'हमारे बारे में',
+      services: 'सेवाएं',
       residential: 'घरेलू सोलर',
       commercial: 'व्यावसायिक सोलर',
       industrial: 'औद्योगिक सोलर',

@@ -31,6 +31,13 @@ export default defineNuxtConfig({
   },
 
   css: [
+    // Self-hosted fonts (Latin + Devanagari subsets, unicode-range split)
+    '@fontsource/poppins/600.css',
+    '@fontsource/poppins/700.css',
+    '@fontsource/mukta/400.css',
+    '@fontsource/mukta/500.css',
+    '@fontsource/mukta/600.css',
+    '@fontsource/mukta/700.css',
     'vuetify/styles',
     '@mdi/font/css/materialdesignicons.css',
     '~/assets/styles/main.scss',

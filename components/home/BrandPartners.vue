@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10 py-md-12">
+  <section class="py-10 py-md-12 bg-section-alt">
     <v-container>
       <CommonSectionHeading
         :eyebrow="t('sections.brandsEyebrow')"
@@ -44,9 +44,10 @@ const { t } = useI18n()
 
 <style scoped>
 .brand-chip {
-  border: 1px solid rgba(11, 31, 58, 0.1);
-  border-radius: 16px;
-  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  background: var(--surface-page);
+  box-shadow: var(--shadow-sm);
   min-width: 180px;
   min-height: 84px;
 }

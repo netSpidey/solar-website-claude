@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="footer bg-navy-gradient pt-12 pb-6" theme="dark">
+  <v-footer class="footer bg-navy-gradient pt-16 pb-8" theme="dark">
     <v-container>
       <v-row>
         <v-col cols="12" md="4">
@@ -26,7 +26,7 @@
         </v-col>
 
         <v-col cols="6" md="2">
-          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">{{ t('footer.services') }}</h3>
+          <h3 class="footer-heading mb-4">{{ t('footer.services') }}</h3>
           <ul class="footer-list">
             <li v-for="service in services" :key="service.slug">
               <NuxtLink :to="localePath(`/${service.slug}`)" class="footer-link">{{ service.title }}</NuxtLink>
@@ -35,7 +35,7 @@
         </v-col>
 
         <v-col cols="6" md="2">
-          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">{{ t('footer.quickLinks') }}</h3>
+          <h3 class="footer-heading mb-4">{{ t('footer.quickLinks') }}</h3>
           <ul class="footer-list">
             <li v-for="link in navLinks" :key="link.to">
               <NuxtLink :to="localePath(link.to)" class="footer-link">{{ link.title }}</NuxtLink>
@@ -44,7 +44,7 @@
         </v-col>
 
         <v-col cols="12" md="4">
-          <h3 class="text-subtitle-1 font-weight-bold mb-4 text-accent">{{ t('footer.contactUs') }}</h3>
+          <h3 class="footer-heading mb-4">{{ t('footer.contactUs') }}</h3>
           <ul class="footer-list">
             <li class="d-flex align-start ga-2 mb-2">
               <v-icon icon="mdi-map-marker-outline" size="18" class="mt-1" />
@@ -104,7 +104,16 @@ const { navLinks, services } = useLocalizedContent()
 <style scoped lang="scss">
 .footer-logo {
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
+}
+
+.footer-heading {
+  color: var(--color-amber);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .footer-list {
@@ -118,12 +127,15 @@ const { navLinks, services } = useLocalizedContent()
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-on-dark-muted);
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
 
   &:hover {
-    color: #FFC107;
+    color: var(--color-amber);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 }
 
