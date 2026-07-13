@@ -64,16 +64,15 @@
         <v-row class="mt-8" justify="center">
           <v-col cols="12" sm="8" md="6">
             <v-card class="text-center pa-8" elevation="1" rounded="xl">
-              <!-- TODO: replace placeholder avatar with a real photo of the proprietor -->
-              <v-avatar size="96" class="mb-4">
-                <v-img src="/assets/images/testimonials/avatar-1.svg" :alt="companyInfo.proprietor" />
+              <v-avatar size="128" class="mb-4">
+                <v-img src="/assets/images/about/proprietor.jpg" :alt="companyInfo.proprietor" cover />
               </v-avatar>
               <h3 class="text-h6 font-weight-bold" style="color: #0B1F3A">{{ companyInfo.proprietor }}</h3>
               <p class="text-body-2 mt-1 mb-4" style="color: #616161">{{ t('pages.about.proprietorRole') }}</p>
+              <div class="d-flex justify-center mb-3">
+                <CommonSchemeBadge :subtitle="t('subsidy.registeredBadge')" />
+              </div>
               <div class="d-flex flex-wrap justify-center ga-2 mb-6">
-                <v-chip color="secondary" variant="tonal" size="small" prepend-icon="mdi-check-decagram">
-                  {{ t('subsidy.registeredBadge') }}
-                </v-chip>
                 <v-chip color="primary" variant="tonal" size="small" prepend-icon="mdi-file-certificate-outline">
                   {{ t('common.gstin') }}: {{ companyInfo.gstin }}
                 </v-chip>

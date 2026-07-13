@@ -89,6 +89,10 @@ export const messages = {
       // DEADLINE: PM Surya Ghar Yojana closing date — update/remove when the scheme ends.
       deadlineText: 'PM Surya Ghar Yojana closes on 31 March 2027 — register now to claim a subsidy of up to ₹78,000.',
       deadlineCta: 'Check Your Subsidy',
+      schemeSpotlightDesc:
+        "The Government of India's flagship rooftop solar scheme — as a registered vendor, we handle your entire subsidy application end-to-end.",
+      schemeSpotlightStats: ['Subsidy up to ₹78,000', '300 units free electricity every month', 'Target: 1 crore solar homes'],
+      officialPortal: 'Official Scheme Portal',
       brandsEyebrow: 'Trusted Brands',
       brandsTitle: 'Panels & Components From Leading Brands',
     },
@@ -153,6 +157,13 @@ export const messages = {
         'Subsidy amounts are indicative and subject to the latest government notification at the time of application. Our team confirms exact figures during your free consultation.',
       registeredBadge: 'Registered Vendor under PM Surya Ghar Yojana',
       channelPartner: 'Authorized Channel Partner / Solar EPC Contractor',
+      schemeName: 'PM Surya Ghar: Muft Bijli Yojana',
+      schemeTag: 'A Government of India Scheme',
+      // Official launch statement from pmsuryaghar.gov.in — quoted verbatim, do not paraphrase.
+      pmQuote:
+        "In order to further sustainable development and people's well-being, we are launching the PM Surya Ghar: Muft Bijli Yojana. This project, with an investment of over Rs. 75,000 crores, aims to light up 1 crore households by providing up to 300 units of free electricity every month.",
+      pmName: 'Shri Narendra Modi',
+      pmRole: "Hon'ble Prime Minister of India",
       eligibilityTitle: 'Eligibility Checklist',
       eligibility: [
         'Property owner with a valid electricity connection',
@@ -455,6 +466,10 @@ export const messages = {
       // DEADLINE: पीएम सूर्य घर योजनेची अंतिम तारीख — योजना संपल्यावर अपडेट/काढून टाका.
       deadlineText: 'पीएम सूर्य घर योजना 31 मार्च 2027 रोजी बंद होणार आहे — ₹78,000 पर्यंत सबसिडीसाठी आजच नोंदणी करा.',
       deadlineCta: 'तुमची सबसिडी तपासा',
+      schemeSpotlightDesc:
+        'भारत सरकारची प्रमुख रूफटॉप सोलर योजना — नोंदणीकृत विक्रेता म्हणून तुमची संपूर्ण सबसिडी अर्ज प्रक्रिया आम्ही सुरुवातीपासून शेवटपर्यंत हाताळतो.',
+      schemeSpotlightStats: ['₹78,000 पर्यंत सबसिडी', 'दरमहा 300 युनिट मोफत वीज', 'उद्दिष्ट: 1 कोटी सोलर घरे'],
+      officialPortal: 'योजनेचे अधिकृत पोर्टल',
       brandsEyebrow: 'विश्वासू ब्रँड्स',
       brandsTitle: 'आघाडीच्या ब्रँड्सचे पॅनल्स व साहित्य',
     },
@@ -519,6 +534,12 @@ export const messages = {
         'सबसिडी रक्कम अंदाजे असून अर्जाच्या वेळी लागू असलेल्या शासकीय अधिसूचनेनुसार बदलू शकते. मोफत सल्लामसलतीत आमची टीम नेमकी रक्कम सांगते.',
       registeredBadge: 'पीएम सूर्य घर योजनेअंतर्गत नोंदणीकृत विक्रेता',
       channelPartner: 'अधिकृत चॅनल पार्टनर / सोलर EPC कॉन्ट्रॅक्टर',
+      schemeName: 'पीएम सूर्य घर: मोफत वीज योजना',
+      schemeTag: 'भारत सरकारची योजना',
+      pmQuote:
+        'शाश्वत विकास आणि जनकल्याणासाठी आम्ही पीएम सूर्य घर: मोफत वीज योजना सुरू करत आहोत. 75,000 कोटी रुपयांहून अधिक गुंतवणुकीच्या या प्रकल्पाचे उद्दिष्ट दरमहा 300 युनिटपर्यंत मोफत वीज देऊन 1 कोटी घरे उजळवण्याचे आहे.',
+      pmName: 'श्री नरेंद्र मोदी',
+      pmRole: 'माननीय पंतप्रधान, भारत',
       eligibilityTitle: 'पात्रता यादी',
       eligibility: [
         'वैध वीज जोडणी असलेले मालमत्ताधारक',
@@ -770,6 +791,10 @@ export const messages = {
       // DEADLINE: पीएम सूर्य घर योजना की अंतिम तिथि — योजना समाप्त होने पर अपडेट/हटाएं.
       deadlineText: 'पीएम सूर्य घर योजना 31 मार्च 2027 को बंद हो रही है — ₹78,000 तक सब्सिडी के लिए आज ही पंजीकरण करें.',
       deadlineCta: 'अपनी सब्सिडी जांचें',
+      schemeSpotlightDesc:
+        'भारत सरकार की प्रमुख रूफटॉप सोलर योजना — पंजीकृत विक्रेता के रूप में आपकी पूरी सब्सिडी आवेदन प्रक्रिया हम शुरू से अंत तक संभालते हैं.',
+      schemeSpotlightStats: ['₹78,000 तक सब्सिडी', 'हर महीने 300 यूनिट मुफ्त बिजली', 'लक्ष्य: 1 करोड़ सोलर घर'],
+      officialPortal: 'योजना का आधिकारिक पोर्टल',
       brandsEyebrow: 'भरोसेमंद ब्रांड',
       brandsTitle: 'अग्रणी ब्रांडों के पैनल व उपकरण',
     },
@@ -834,6 +859,12 @@ export const messages = {
         'सब्सिडी राशि सांकेतिक है और आवेदन के समय लागू सरकारी अधिसूचना के अनुसार बदल सकती है. मुफ्त परामर्श में हमारी टीम सटीक राशि बताती है.',
       registeredBadge: 'पीएम सूर्य घर योजना के तहत पंजीकृत विक्रेता',
       channelPartner: 'अधिकृत चैनल पार्टनर / सोलर EPC कॉन्ट्रैक्टर',
+      schemeName: 'पीएम सूर्य घर: मुफ्त बिजली योजना',
+      schemeTag: 'भारत सरकार की योजना',
+      pmQuote:
+        'सतत विकास और जनता की भलाई के लिए हम पीएम सूर्य घर: मुफ्त बिजली योजना का शुभारंभ कर रहे हैं. 75,000 करोड़ रुपये से अधिक के निवेश वाली इस परियोजना का लक्ष्य हर महीने 300 यूनिट तक मुफ्त बिजली प्रदान करके 1 करोड़ घरों को रोशन करना है.',
+      pmName: 'श्री नरेन्द्र मोदी',
+      pmRole: 'माननीय प्रधानमंत्री, भारत',
       eligibilityTitle: 'पात्रता सूची',
       eligibility: [
         'वैध बिजली कनेक्शन वाला संपत्ति मालिक',

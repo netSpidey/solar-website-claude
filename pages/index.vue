@@ -2,6 +2,7 @@
   <div>
     <HomeHeroSection />
     <HomeSubsidyDeadlineBanner />
+    <HomeSchemeSpotlight />
     <HomeTrustStats />
     <HomeServicesSection />
     <HomeBrandPartners />

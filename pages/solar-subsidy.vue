@@ -4,6 +4,8 @@
 
     <HomeSubsidyDeadlineBanner />
 
+    <SubsidyPmQuoteBand />
+
     <section class="section-py">
       <v-container>
         <v-row>
