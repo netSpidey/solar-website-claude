@@ -5,7 +5,7 @@
     elevation="0"
     :to="localePath(`/${service.slug}`)"
   >
-    <div v-if="!compact" class="service-card__media">
+    <div class="service-card__media" :class="{ 'service-card__media--compact': compact }">
       <v-img
         :src="service.image"
         :alt="service.title"
@@ -18,10 +18,7 @@
       </div>
     </div>
 
-    <v-card-item :class="compact ? 'pt-5' : 'pt-4'">
-      <div v-if="compact" class="service-card__icon-chip mb-3">
-        <v-icon :icon="service.icon" size="24" />
-      </div>
+    <v-card-item class="pt-4">
       <v-card-title class="font-weight-bold px-0 service-card__title" :class="compact ? 'text-subtitle-1' : 'text-h6'">
         {{ service.title }}
       </v-card-title>
@@ -63,6 +60,10 @@ const localePath = useLocalePath()
     aspect-ratio: 4 / 3;
     overflow: hidden;
     background: var(--surface-alt-strong);
+
+    &--compact {
+      aspect-ratio: 16 / 9;
+    }
   }
 
   &__img {
@@ -88,17 +89,6 @@ const localePath = useLocalePath()
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  &__icon-chip {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    background: var(--color-amber-soft);
-    color: var(--color-navy);
   }
 
   &__title {

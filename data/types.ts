@@ -68,4 +68,6 @@ export interface WhyChooseUsItem {
   title: string
   description: string
   icon: string
+  image: string
+  imagePosition?: string
 }
