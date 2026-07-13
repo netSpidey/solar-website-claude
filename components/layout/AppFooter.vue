@@ -9,6 +9,7 @@
           <p class="text-body-2 text-white opacity-80 mb-4">
             {{ t('company.footerAbout') }}
           </p>
+          <CommonSchemeBadge dark :subtitle="t('subsidy.registeredBadge')" class="mb-4" />
           <div v-if="socialLinks.length" class="d-flex ga-2">
             <v-btn
               v-for="social in socialLinks"

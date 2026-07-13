@@ -153,6 +153,13 @@ export const messages = {
         'Subsidy amounts are indicative and subject to the latest government notification at the time of application. Our team confirms exact figures during your free consultation.',
       registeredBadge: 'Registered Vendor under PM Surya Ghar Yojana',
       channelPartner: 'Authorized Channel Partner / Solar EPC Contractor',
+      schemeName: 'PM Surya Ghar: Muft Bijli Yojana',
+      schemeTag: 'A Government of India Scheme',
+      // Official launch statement from pmsuryaghar.gov.in — quoted verbatim, do not paraphrase.
+      pmQuote:
+        "In order to further sustainable development and people's well-being, we are launching the PM Surya Ghar: Muft Bijli Yojana. This project, with an investment of over Rs. 75,000 crores, aims to light up 1 crore households by providing up to 300 units of free electricity every month.",
+      pmName: 'Shri Narendra Modi',
+      pmRole: "Hon'ble Prime Minister of India",
       eligibilityTitle: 'Eligibility Checklist',
       eligibility: [
         'Property owner with a valid electricity connection',
@@ -519,6 +526,12 @@ export const messages = {
         'सबसिडी रक्कम अंदाजे असून अर्जाच्या वेळी लागू असलेल्या शासकीय अधिसूचनेनुसार बदलू शकते. मोफत सल्लामसलतीत आमची टीम नेमकी रक्कम सांगते.',
       registeredBadge: 'पीएम सूर्य घर योजनेअंतर्गत नोंदणीकृत विक्रेता',
       channelPartner: 'अधिकृत चॅनल पार्टनर / सोलर EPC कॉन्ट्रॅक्टर',
+      schemeName: 'पीएम सूर्य घर: मोफत वीज योजना',
+      schemeTag: 'भारत सरकारची योजना',
+      pmQuote:
+        'शाश्वत विकास आणि जनकल्याणासाठी आम्ही पीएम सूर्य घर: मोफत वीज योजना सुरू करत आहोत. 75,000 कोटी रुपयांहून अधिक गुंतवणुकीच्या या प्रकल्पाचे उद्दिष्ट दरमहा 300 युनिटपर्यंत मोफत वीज देऊन 1 कोटी घरे उजळवण्याचे आहे.',
+      pmName: 'श्री नरेंद्र मोदी',
+      pmRole: 'माननीय पंतप्रधान, भारत',
       eligibilityTitle: 'पात्रता यादी',
       eligibility: [
         'वैध वीज जोडणी असलेले मालमत्ताधारक',
@@ -834,6 +847,12 @@ export const messages = {
         'सब्सिडी राशि सांकेतिक है और आवेदन के समय लागू सरकारी अधिसूचना के अनुसार बदल सकती है. मुफ्त परामर्श में हमारी टीम सटीक राशि बताती है.',
       registeredBadge: 'पीएम सूर्य घर योजना के तहत पंजीकृत विक्रेता',
       channelPartner: 'अधिकृत चैनल पार्टनर / सोलर EPC कॉन्ट्रैक्टर',
+      schemeName: 'पीएम सूर्य घर: मुफ्त बिजली योजना',
+      schemeTag: 'भारत सरकार की योजना',
+      pmQuote:
+        'सतत विकास और जनता की भलाई के लिए हम पीएम सूर्य घर: मुफ्त बिजली योजना का शुभारंभ कर रहे हैं. 75,000 करोड़ रुपये से अधिक के निवेश वाली इस परियोजना का लक्ष्य हर महीने 300 यूनिट तक मुफ्त बिजली प्रदान करके 1 करोड़ घरों को रोशन करना है.',
+      pmName: 'श्री नरेन्द्र मोदी',
+      pmRole: 'माननीय प्रधानमंत्री, भारत',
       eligibilityTitle: 'पात्रता सूची',
       eligibility: [
         'वैध बिजली कनेक्शन वाला संपत्ति मालिक',
