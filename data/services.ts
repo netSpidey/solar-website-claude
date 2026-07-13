@@ -58,8 +58,7 @@ export const services: ServiceItem[] = [
     description:
       'Automated solar panel cleaning systems that keep your panels dust-free year-round — improving generation by 5–20% while saving water, time, and labour. Can be retrofitted on existing plants.',
     icon: 'mdi-sprinkler-variant',
-    // TODO: replace placeholder illustration with a real installation photo
-    image: '/assets/images/services/auto-cleaning-system.svg',
+    image: '/assets/images/services/auto-cleaning-system.jpg',
     features: [
       'Panels stay clean for maximum generation',
       '5–20% improvement in performance',
@@ -124,8 +123,7 @@ export const services: ServiceItem[] = [
     description:
       'Safe, professionally installed EV charging points for homes, housing societies, and commercial premises — with the option to power your charging from rooftop solar.',
     icon: 'mdi-ev-station',
-    // TODO: replace placeholder illustration with a real installation photo
-    image: '/assets/images/services/ev-charging.svg',
+    image: '/assets/images/services/ev-charging.jpg',
     features: [
       'Home & society charger installation',
       'Solar-integrated charging options',
