@@ -89,6 +89,10 @@ export const messages = {
       // DEADLINE: PM Surya Ghar Yojana closing date — update/remove when the scheme ends.
       deadlineText: 'PM Surya Ghar Yojana closes on 31 March 2027 — register now to claim a subsidy of up to ₹78,000.',
       deadlineCta: 'Check Your Subsidy',
+      schemeSpotlightDesc:
+        "The Government of India's flagship rooftop solar scheme — as a registered vendor, we handle your entire subsidy application end-to-end.",
+      schemeSpotlightStats: ['Subsidy up to ₹78,000', '300 units free electricity every month', 'Target: 1 crore solar homes'],
+      officialPortal: 'Official Scheme Portal',
       brandsEyebrow: 'Trusted Brands',
       brandsTitle: 'Panels & Components From Leading Brands',
     },
@@ -462,6 +466,10 @@ export const messages = {
       // DEADLINE: पीएम सूर्य घर योजनेची अंतिम तारीख — योजना संपल्यावर अपडेट/काढून टाका.
       deadlineText: 'पीएम सूर्य घर योजना 31 मार्च 2027 रोजी बंद होणार आहे — ₹78,000 पर्यंत सबसिडीसाठी आजच नोंदणी करा.',
       deadlineCta: 'तुमची सबसिडी तपासा',
+      schemeSpotlightDesc:
+        'भारत सरकारची प्रमुख रूफटॉप सोलर योजना — नोंदणीकृत विक्रेता म्हणून तुमची संपूर्ण सबसिडी अर्ज प्रक्रिया आम्ही सुरुवातीपासून शेवटपर्यंत हाताळतो.',
+      schemeSpotlightStats: ['₹78,000 पर्यंत सबसिडी', 'दरमहा 300 युनिट मोफत वीज', 'उद्दिष्ट: 1 कोटी सोलर घरे'],
+      officialPortal: 'योजनेचे अधिकृत पोर्टल',
       brandsEyebrow: 'विश्वासू ब्रँड्स',
       brandsTitle: 'आघाडीच्या ब्रँड्सचे पॅनल्स व साहित्य',
     },
@@ -783,6 +791,10 @@ export const messages = {
       // DEADLINE: पीएम सूर्य घर योजना की अंतिम तिथि — योजना समाप्त होने पर अपडेट/हटाएं.
       deadlineText: 'पीएम सूर्य घर योजना 31 मार्च 2027 को बंद हो रही है — ₹78,000 तक सब्सिडी के लिए आज ही पंजीकरण करें.',
       deadlineCta: 'अपनी सब्सिडी जांचें',
+      schemeSpotlightDesc:
+        'भारत सरकार की प्रमुख रूफटॉप सोलर योजना — पंजीकृत विक्रेता के रूप में आपकी पूरी सब्सिडी आवेदन प्रक्रिया हम शुरू से अंत तक संभालते हैं.',
+      schemeSpotlightStats: ['₹78,000 तक सब्सिडी', 'हर महीने 300 यूनिट मुफ्त बिजली', 'लक्ष्य: 1 करोड़ सोलर घर'],
+      officialPortal: 'योजना का आधिकारिक पोर्टल',
       brandsEyebrow: 'भरोसेमंद ब्रांड',
       brandsTitle: 'अग्रणी ब्रांडों के पैनल व उपकरण',
     },

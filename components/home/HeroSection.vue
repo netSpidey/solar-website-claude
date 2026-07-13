@@ -4,7 +4,7 @@
       <v-row align="center">
         <v-col cols="12" md="7" class="pr-md-8">
           <div class="hero__badge">
-            <v-icon icon="mdi-shield-check" size="18" color="accent" />
+            <v-icon icon="mdi-check-decagram" size="18" />
             <span>{{ t('hero.badge') }}</span>
           </div>
 
@@ -95,11 +95,10 @@ const trustPoints = computed(() => tm('hero.trust') as string[])
   gap: 8px;
   padding: 8px 16px;
   border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: var(--text-on-dark);
+  background: var(--color-amber);
+  color: var(--color-navy);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero__title {
