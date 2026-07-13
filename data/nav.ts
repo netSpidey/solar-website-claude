@@ -1,7 +1,7 @@
 export const companyInfo = {
   name: 'S.P. Enterprises, Nashik Solar',
   tagline: 'Surya Ki Shakti, Ghar Ki Bachat.',
-  proprietor: 'Sachin Pawar',
+  proprietor: 'Mr. Sachin Pawar',
   phone: '+91 78876 72707',
   phoneDisplay: '+91 78876 72707',
   whatsapp: '917887672707',
