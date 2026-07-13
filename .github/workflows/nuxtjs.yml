@@ -30,15 +30,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Custom domain serves from the root, so no NUXT_APP_BASE_URL prefix.
       - name: Generate static site
         run: npm run generate
-        env:
-          NUXT_APP_BASE_URL: /solar-website-claude/
 
-      - name: Verify GitHub Pages asset paths
+      - name: Verify asset paths use the domain root
         run: |
-          ! grep -R 'buildAssetsDir:"/_nuxt/"' .output/public
-          ! grep -R 'href="/_nuxt\|src="/_nuxt' .output/public
+          grep -q 'src="/_nuxt' .output/public/index.html
+          ! grep -R 'solar-website-claude' .output/public --include='*.html' -l
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
