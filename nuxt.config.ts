@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       // emails the key to the recipient address on signup at web3forms.com).
       // The key is public-by-design (client-side safe), so hardcoding is fine.
       web3formsAccessKey:
-        process.env.NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY || '72321e15-9e99-4a01-8495-b8efc5260425',
+        process.env.NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY || '48b25d48-7bf4-4f81-8841-d36103140b27',
     },
   },
 
