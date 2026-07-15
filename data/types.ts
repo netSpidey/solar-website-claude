@@ -23,6 +23,13 @@ export interface ProjectItem {
   description: string
 }
 
+export interface GalleryImage {
+  src: string
+  alt: string
+  /** Optional CSS object-position override for awkward crops. */
+  imagePosition?: string
+}
+
 export interface TestimonialItem {
   id: string
   name: string

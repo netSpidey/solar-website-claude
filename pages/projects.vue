@@ -7,7 +7,7 @@
 
     <section class="section-py">
       <v-container>
-        <div class="d-flex flex-wrap justify-center ga-2 mb-8">
+        <div v-if="filters.length" class="d-flex flex-wrap justify-center ga-2 mb-8">
           <v-chip
             v-for="filter in filters"
             :key="filter"
@@ -28,6 +28,8 @@
       </v-container>
     </section>
 
+    <ProjectsInstallationGallery />
+
     <HomeTrustStats />
     <HomeFinalCTA />
   </div>
@@ -39,10 +41,12 @@ import { projects } from '~/data/projects'
 const { t } = useI18n()
 const { translateCategory } = useLocalizedContent()
 
-const filters = ['All', 'Residential', 'Commercial'] as const
-const activeFilter = ref<(typeof filters)[number]>('All')
-
 const visibleProjects = projects.filter((p) => p.propertyType !== 'Industrial')
+
+// Chips only make sense with more than one category; hide the row otherwise.
+const availableTypes = [...new Set(visibleProjects.map((p) => p.propertyType))]
+const filters = availableTypes.length > 1 ? ['All', ...availableTypes] : []
+const activeFilter = ref<string>('All')
 
 const filteredProjects = computed(() =>
   activeFilter.value === 'All' ? visibleProjects : visibleProjects.filter((p) => p.propertyType === activeFilter.value)

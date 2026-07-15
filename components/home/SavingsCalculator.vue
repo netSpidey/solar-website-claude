@@ -26,7 +26,7 @@
                 <v-slider
                   v-model="monthlyBill"
                   :min="500"
-                  :max="100000"
+                  :max="10000"
                   :step="500"
                   color="primary"
                   track-color="grey-lighten-2"
