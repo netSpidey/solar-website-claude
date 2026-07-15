@@ -28,8 +28,40 @@
       />
       <v-textarea v-model="form.message" :label="t('forms.optionalMessage')" rows="3" prepend-inner-icon="mdi-message-text-outline" class="mb-2" />
 
+      <input v-model="form.botcheck" type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
       <v-alert v-if="submitted" type="success" variant="tonal" class="mb-4">
         {{ t('forms.quoteSuccess', { name: form.name || t('forms.there') }) }}
+        <v-btn
+          color="success"
+          variant="flat"
+          size="small"
+          block
+          prepend-icon="mdi-whatsapp"
+          :href="whatsappUrl"
+          target="_blank"
+          rel="noopener"
+          class="mt-3"
+        >
+          {{ t('forms.continueWhatsapp') }}
+        </v-btn>
+      </v-alert>
+
+      <v-alert v-if="error" type="error" variant="tonal" class="mb-4">
+        {{ t('forms.submitError') }}
+        <v-btn
+          color="success"
+          variant="flat"
+          size="small"
+          block
+          prepend-icon="mdi-whatsapp"
+          :href="whatsappUrl"
+          target="_blank"
+          rel="noopener"
+          class="mt-3"
+        >
+          {{ t('forms.continueWhatsapp') }}
+        </v-btn>
       </v-alert>
 
       <v-btn type="submit" color="accent" size="large" block :loading="submitting" class="text-deep-navy">
@@ -54,6 +86,7 @@ const form = reactive({
   monthlyBill: '',
   propertyType: 'Residential',
   message: '',
+  botcheck: false,
 })
 
 const propertyOptionLabels = computed(() => tm('forms.propertyOptions') as string[])
@@ -69,7 +102,7 @@ const rules = {
   phone: (v: string) => /^[6-9]\d{9}$/.test((v || '').replace(/\s+/g, '')) || t('forms.invalidPhone'),
 }
 
-const { submitting, submitted, submitLead } = useLeadSubmit()
+const { submitting, submitted, error, whatsappUrl, submitLead } = useLeadSubmit()
 
 async function handleSubmit() {
   const { valid } = await formRef.value.validate()
@@ -82,6 +115,7 @@ async function handleSubmit() {
     propertyType: form.propertyType,
     message: form.message,
     source: 'homepage-lead-form',
+    botcheck: form.botcheck,
   })
 }
 </script>

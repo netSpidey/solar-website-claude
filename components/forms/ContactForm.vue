@@ -25,11 +25,39 @@
       </v-col>
     </v-row>
 
+    <input v-model="form.botcheck" type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
     <v-alert v-if="submitted" type="success" variant="tonal" class="mb-4">
       {{ t('forms.contactSuccess') }}
+      <v-btn
+        color="success"
+        variant="flat"
+        size="small"
+        block
+        prepend-icon="mdi-whatsapp"
+        :href="whatsappUrl"
+        target="_blank"
+        rel="noopener"
+        class="mt-3"
+      >
+        {{ t('forms.continueWhatsapp') }}
+      </v-btn>
     </v-alert>
     <v-alert v-if="error" type="error" variant="tonal" class="mb-4">
-      {{ error }}
+      {{ t('forms.submitError') }}
+      <v-btn
+        color="success"
+        variant="flat"
+        size="small"
+        block
+        prepend-icon="mdi-whatsapp"
+        :href="whatsappUrl"
+        target="_blank"
+        rel="noopener"
+        class="mt-3"
+      >
+        {{ t('forms.continueWhatsapp') }}
+      </v-btn>
     </v-alert>
 
     <v-btn
@@ -59,6 +87,7 @@ const form = reactive({
   email: '',
   service: '',
   message: '',
+  botcheck: false,
 })
 
 const serviceOptions = computed(() => services.value.map((s) => ({ title: s.title, value: s.slug })))
@@ -69,7 +98,7 @@ const rules = {
   email: (v: string) => !v || /.+@.+\..+/.test(v) || t('forms.invalidEmail'),
 }
 
-const { submitting, submitted, error, submitLead } = useLeadSubmit()
+const { submitting, submitted, error, whatsappUrl, submitLead } = useLeadSubmit()
 
 async function handleSubmit() {
   const { valid } = await formRef.value.validate()
@@ -82,6 +111,7 @@ async function handleSubmit() {
     service: form.service,
     message: form.message,
     source: props.source,
+    botcheck: form.botcheck,
   })
 
   if (submitted.value) {

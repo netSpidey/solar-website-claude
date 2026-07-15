@@ -9,6 +9,17 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
 
+  runtimeConfig: {
+    public: {
+      // TODO(client): replace with the real Web3Forms access key. Creating it
+      // requires access to the sachinpawar461883@gmail.com inbox (Web3Forms
+      // emails the key to the recipient address on signup at web3forms.com).
+      // The key is public-by-design (client-side safe), so hardcoding is fine.
+      web3formsAccessKey:
+        process.env.NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY || '72321e15-9e99-4a01-8495-b8efc5260425',
+    },
+  },
+
   app: {
     baseURL,
     buildAssetsDir: '_nuxt/',
