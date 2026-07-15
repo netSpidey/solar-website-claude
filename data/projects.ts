@@ -1,50 +1,75 @@
 import type { ProjectItem } from './types'
 
-// PLACEHOLDER portfolio — replace with real S.P. Enterprises installations before go-live.
+// Real S.P. Enterprises installations — photos supplied by the client (July 2026).
+// The first 3 entries also appear on the homepage (ProjectsPreview shows slice(0, 3)).
+// TODO(client): systemSize and estimatedSavings are pending from S.P. Enterprises —
+// need kW capacity + approx. monthly saving for each site below. ProjectCard hides
+// the stat chips while these are empty strings, so nothing fabricated is shown.
 export const projects: ProjectItem[] = [
   {
     id: 'proj-1',
-    title: 'Bungalow Rooftop Installation',
-    location: 'Gangapur Road, Nashik',
-    systemSize: '5 kW',
+    title: 'Elevated Rooftop Solar Canopy',
+    location: 'Dattatray Nagar, Hanuman Nagar, Nashik',
+    systemSize: '',
     propertyType: 'Residential',
-    estimatedSavings: '₹4,500/month',
+    estimatedSavings: '',
     image: '/assets/images/projects/project-residential-1.jpg',
     description:
-      'A 5 kW rooftop system installed for a bungalow, cutting the monthly electricity bill from ₹5,200 to under ₹700.',
+      'Elevated-structure rooftop system that shades the terrace and water tanks while generating power for the home.',
   },
   {
     id: 'proj-2',
-    title: 'Duplex Home Solar System',
-    location: 'Indiranagar, Nashik',
-    systemSize: '3 kW',
+    title: 'Terrace Solar Installation',
+    location: 'Saraf Bazar, Panchavati, Nashik',
+    systemSize: '',
     propertyType: 'Residential',
-    estimatedSavings: '₹2,800/month',
+    estimatedSavings: '',
     image: '/assets/images/projects/project-residential-2.jpg',
     description:
-      'Compact 3 kW system on a duplex roof, designed to offset nearly the entire household consumption.',
+      'Elevated rooftop solar structure installed on a family home in the heart of Panchavati, keeping the terrace usable below.',
   },
   {
     id: 'proj-3',
-    title: 'Retail Showroom Solar',
-    location: 'College Road, Nashik',
-    systemSize: '15 kW',
-    propertyType: 'Commercial',
-    estimatedSavings: '₹18,000/month',
-    image: '/assets/images/projects/project-commercial-1.jpg',
+    title: 'Home Solar Canopy System',
+    location: 'Pavan Nagar, Nashik',
+    systemSize: '',
+    propertyType: 'Residential',
+    estimatedSavings: '',
+    image: '/assets/images/projects/project-residential-3.jpg',
     description:
-      'Rooftop solar for a two-floor retail showroom, reducing daytime grid dependency by over 80%.',
+      'High-clearance solar canopy over the terrace of a bungalow near Raigad Chowk, Pavan Nagar.',
   },
   {
     id: 'proj-4',
-    title: 'Hotel & Banquet Hall',
-    location: 'Mumbai Naka, Nashik',
-    systemSize: '40 kW',
-    propertyType: 'Commercial',
-    estimatedSavings: '₹52,000/month',
-    image: '/assets/images/projects/project-commercial-2.jpg',
-    imagePosition: 'center 88%',
+    title: 'Twin-Canopy Rooftop System',
+    location: 'Shiv Krupa Nagar, Nashik',
+    systemSize: '',
+    propertyType: 'Residential',
+    estimatedSavings: '',
+    image: '/assets/images/projects/project-residential-4.jpg',
     description:
-      'A 40 kW hybrid rooftop system supporting a hotel and banquet hall with heavy daytime HVAC load.',
+      'Two elevated panel canopies installed side by side on a residential terrace in Shiv Krupa Nagar.',
+  },
+  {
+    id: 'proj-5',
+    title: 'Bungalow Rooftop Installation',
+    location: 'Nandgaon, Malegaon Road',
+    systemSize: '',
+    propertyType: 'Residential',
+    estimatedSavings: '',
+    image: '/assets/images/projects/project-residential-5.jpg',
+    description:
+      'Rooftop solar system installed on a bungalow along the Aurangabad–Malegaon Road in Nandgaon.',
+  },
+  {
+    id: 'proj-6',
+    title: 'Duplex Home Solar System',
+    location: 'Sadashiv Nagar, Old Cidco, Nashik',
+    systemSize: '',
+    propertyType: 'Residential',
+    estimatedSavings: '',
+    image: '/assets/images/projects/project-residential-6.jpg',
+    description:
+      'Elevated rooftop structure on a duplex home in Old Cidco, built to carry the full panel array above the terrace.',
   },
 ]

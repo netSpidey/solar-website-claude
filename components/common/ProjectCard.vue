@@ -21,12 +21,12 @@
     </v-card-item>
     <v-card-text class="pt-1 pb-5">
       <div class="d-flex flex-wrap ga-2">
-        <span class="stat-chip">
+        <span v-if="project.systemSize" class="stat-chip">
           <v-icon icon="mdi-lightning-bolt" size="15" />
           <span class="d-sr-only">{{ t('common.systemSize') }}: </span>
           {{ project.systemSize }}
         </span>
-        <span class="stat-chip stat-chip--green">
+        <span v-if="project.estimatedSavings" class="stat-chip stat-chip--green">
           <v-icon icon="mdi-piggy-bank-outline" size="15" />
           <span class="d-sr-only">{{ t('common.estSavings') }}: </span>
           {{ project.estimatedSavings }}
