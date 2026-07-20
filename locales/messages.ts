@@ -38,6 +38,9 @@ export const messages = {
     },
     company: {
       brandLine1: 'S.P. Enterprises',
+      brandS: 'S',
+      brandP: 'P',
+      brandEnterprises: 'Enterprises',
       brandLine2: 'Nashik Solar',
       tagline: 'Surya Ki Shakti, Ghar Ki Bachat.',
       address: 'Flat No. A-401, Aaradhya Residency, Phase-2, Aanand Nagar, Near Kadam Lawns, Nashik Road, Nashik - 422101',
@@ -56,8 +59,12 @@ export const messages = {
       badge: 'PM Surya Ghar Registered Vendor',
       titlePrefix: 'Power Your Home with',
       titleHighlight: 'Clean Solar Energy',
-      subtitle:
-        'Save up to 90% on electricity bills with rooftop solar — government subsidy up to ₹78,000, bank loans at 6.4%, and a free site visit in Nashik.',
+      subtitle: [
+        'Save up to 90% on electricity bills with rooftop solar',
+        'Government subsidy up to ₹78,000',
+        'Loans at 6.5% interest from government / nationalised banks',
+        'Free site visit and guidance in Nashik',
+      ],
       calculate: 'Calculate Your Savings',
       expert: 'Talk to an Expert',
       trust: ['Free Site Visit', 'Subsidy up to ₹78,000', '25-Year Performance Warranty'],
@@ -103,13 +110,13 @@ export const messages = {
       brandsTitle: 'Panels & Components From Leading Brands',
     },
     stats: {
-      values: ['₹78,000', '25 Years', '3–4 Years', '6.4%'],
+      values: ['₹78,000', '25 Years', '3–4 Years', '6.5%'],
       labels: ['Max Central Subsidy', 'Performance Warranty', 'Typical Payback', 'Bank Loan Interest'],
     },
     why: {
       titles: [
         'Subsidy up to ₹78,000',
-        'Bank Loans at 6.4%',
+        'Bank Loans at 6.5%',
         'MSEB-Compliant Installation',
         '25-Year Performance Warranty',
         'Payback in 3–4 Years',
@@ -119,7 +126,7 @@ export const messages = {
       ],
       descriptions: [
         'Government subsidy up to ₹78,000 under PM Surya Ghar Yojana, with complete application support.',
-        'Nationalised-bank solar loans at 6.4% interest — we assist with the application.',
+        'Nationalised-bank solar loans at 6.5% interest — we assist with the application.',
         'Installation as per MSEB/MSEDCL norms with complete net metering support.',
         'Tier-1 panels with up to 25-year performance warranty.',
         'Recover your investment in just 3–4 years through electricity bill savings.',
@@ -153,8 +160,10 @@ export const messages = {
     subsidy: {
       heroTitle: 'Solar Subsidy Assistance in Nashik',
       // DEADLINE: PM Surya Ghar Yojana closing date — update/remove when the scheme ends.
-      heroSubtitle:
-        'PM Surya Ghar Yojana closes on 31 March 2027 — we handle the complete subsidy application so you get the maximum benefit with zero paperwork hassle.',
+      heroSubtitle: [
+        'PM Surya Ghar Yojana closes on 31 March 2027 — register now to get the maximum subsidy benefit.',
+        "We will take care of the customer's PM portal registration, subsidy process, and government bank application process.",
+      ],
       eyebrow: 'PM Surya Ghar Muft Bijli Yojana',
       title: 'Get Up to ₹78,000 in Central Subsidy',
       subtitle: 'Residential rooftop solar systems up to 3 kW are eligible for subsidy under the national PM Surya Ghar scheme.',
@@ -177,8 +186,8 @@ export const messages = {
         'Willingness to install a system up to 3 kW for maximum central subsidy',
         'Valid identity and property ownership documents',
       ],
-      loanTitle: 'Solar Loans at 6.4% Interest',
-      loanDesc: 'Nationalised banks offer solar loans at 6.4% interest — our team assists you with the complete loan application.',
+      loanTitle: 'Solar Loans at 6.5% Interest',
+      loanDesc: 'Nationalised banks offer solar loans at 6.5% interest — our team assists you with the complete loan application.',
       processEyebrow: 'Application Process',
       processTitle: 'How We Handle Your Subsidy Application',
       stepTitles: ['Registration', 'Documentation', 'Installation & Inspection', 'Disbursement'],
@@ -424,6 +433,9 @@ export const messages = {
     },
     company: {
       brandLine1: 'एस.पी. एन्टरप्रायजेस',
+      brandS: 'एस',
+      brandP: 'पी',
+      brandEnterprises: 'एन्टरप्रायजेस',
       brandLine2: 'नाशिक सोलर',
       tagline: 'सूर्याची शक्ती, घराची बचत.',
       address: 'फ्लॅट क्र. A-401, आराध्या रेसिडेन्सी, फेज-2, आनंद नगर, कदम लॉन्सजवळ, नाशिक रोड, नाशिक - 422101',
@@ -442,8 +454,12 @@ export const messages = {
       badge: 'पीएम सूर्य घर नोंदणीकृत विक्रेता',
       titlePrefix: 'तुमच्या घराला द्या',
       titleHighlight: 'स्वच्छ सौर ऊर्जेची साथ',
-      subtitle:
-        'रूफटॉप सोलरने वीजबिलात 90% पर्यंत बचत — ₹78,000 पर्यंत शासकीय सबसिडी, 6.4% व्याजदराने बँक कर्ज आणि नाशिकमध्ये मोफत साइट व्हिजिट.',
+      subtitle: [
+        'रूफटॉप सोलरने वीजबिलात 90% पर्यंत बचत',
+        '₹78,000 पर्यंत शासकीय सबसिडी',
+        'शासकीय/राष्ट्रीयीकृत बँकांकडून 6.5% व्याजदराने कर्ज',
+        'नाशिकमध्ये मोफत साइट व्हिजिट आणि मार्गदर्शन',
+      ],
       calculate: 'बचत मोजा',
       expert: 'तज्ञांशी बोला',
       trust: ['मोफत साइट व्हिजिट', '₹78,000 पर्यंत सबसिडी', '25 वर्षांची परफॉर्मन्स वॉरंटी'],
@@ -488,13 +504,13 @@ export const messages = {
       brandsTitle: 'आघाडीच्या ब्रँड्सचे पॅनल्स व साहित्य',
     },
     stats: {
-      values: ['₹78,000', '25 वर्षे', '3–4 वर्षे', '6.4%'],
+      values: ['₹78,000', '25 वर्षे', '3–4 वर्षे', '6.5%'],
       labels: ['कमाल केंद्रीय सबसिडी', 'परफॉर्मन्स वॉरंटी', 'गुंतवणुकीचा परतावा', 'बँक कर्ज व्याजदर'],
     },
     why: {
       titles: [
         '₹78,000 पर्यंत सबसिडी',
-        '6.4% व्याजदराने बँक कर्ज',
+        '6.5% व्याजदराने बँक कर्ज',
         'MSEB नियमांनुसार स्थापना',
         '25 वर्षांची परफॉर्मन्स वॉरंटी',
         '3–4 वर्षांत परतावा',
@@ -504,7 +520,7 @@ export const messages = {
       ],
       descriptions: [
         'पीएम सूर्य घर योजनेअंतर्गत ₹78,000 पर्यंत शासकीय अनुदान, संपूर्ण अर्ज प्रक्रियेत मदत.',
-        'राष्ट्रीयीकृत बँकांकडून 6.4% व्याजदराने सोलर कर्ज — अर्जासाठी आमची मदत.',
+        'राष्ट्रीयीकृत बँकांकडून 6.5% व्याजदराने सोलर कर्ज — अर्जासाठी आमची मदत.',
         'MSEB/MSEDCL नियमांनुसार इन्स्टॉलेशन आणि संपूर्ण नेट मीटरिंग मदत.',
         'टियर-1 पॅनल्ससह 25 वर्षांपर्यंत परफॉर्मन्स वॉरंटी.',
         'वीजबिल बचतीतून फक्त 3–4 वर्षांत गुंतवणुकीचा परतावा मिळवा.',
@@ -538,8 +554,10 @@ export const messages = {
     subsidy: {
       heroTitle: 'नाशिकमध्ये सोलर सबसिडी मदत',
       // DEADLINE: पीएम सूर्य घर योजनेची अंतिम तारीख — योजना संपल्यावर अपडेट/काढून टाका.
-      heroSubtitle:
-        'पीएम सूर्य घर योजना 31 मार्च 2027 रोजी बंद होणार आहे — कागदपत्रांच्या त्रासाशिवाय जास्तीत जास्त लाभासाठी संपूर्ण सबसिडी अर्ज प्रक्रिया आम्ही करतो.',
+      heroSubtitle: [
+        'पीएम सूर्य घर योजना 31 मार्च 2027 रोजी बंद होणार आहे — जास्तीत जास्त सबसिडी मिळवण्यासाठी आजच नोंदणी करा.',
+        'आम्ही ग्राहकाच्या वतीने पीएम पोर्टल नोंदणी, सबसिडी प्रक्रिया आणि सरकारी बँक कर्ज अर्ज प्रक्रिया पूर्ण करून देतो.',
+      ],
       eyebrow: 'पीएम सूर्य घर मोफत वीज योजना',
       title: '₹78,000 पर्यंत केंद्रीय सबसिडी मिळवा',
       subtitle: '3 किलोवॅटपर्यंतच्या घरगुती रूफटॉप सोलर सिस्टमला पीएम सूर्य घर योजनेअंतर्गत सबसिडी मिळते.',
@@ -561,8 +579,8 @@ export const messages = {
         'कमाल केंद्रीय सबसिडीसाठी 3 किलोवॅटपर्यंत सिस्टम बसवण्याची तयारी',
         'वैध ओळखपत्र व मालमत्तेची कागदपत्रे',
       ],
-      loanTitle: '6.4% व्याजदराने सोलर कर्ज',
-      loanDesc: 'राष्ट्रीयीकृत बँका 6.4% व्याजदराने सोलर कर्ज देतात — संपूर्ण कर्ज अर्जासाठी आमची टीम मदत करते.',
+      loanTitle: '6.5% व्याजदराने सोलर कर्ज',
+      loanDesc: 'राष्ट्रीयीकृत बँका 6.5% व्याजदराने सोलर कर्ज देतात — संपूर्ण कर्ज अर्जासाठी आमची टीम मदत करते.',
       processEyebrow: 'अर्ज प्रक्रिया',
       processTitle: 'तुमचा सबसिडी अर्ज आम्ही कसा हाताळतो',
       stepTitles: ['नोंदणी', 'कागदपत्रे', 'स्थापना व तपासणी', 'रक्कम जमा'],
@@ -757,6 +775,9 @@ export const messages = {
     },
     company: {
       brandLine1: 'एस.पी. एंटरप्राइजेस',
+      brandS: 'एस',
+      brandP: 'पी',
+      brandEnterprises: 'एंटरप्राइजेस',
       brandLine2: 'नाशिक सोलर',
       tagline: 'सूर्य की शक्ति, घर की बचत.',
       address: 'फ्लैट नं. A-401, आराध्या रेसिडेंसी, फेज-2, आनंद नगर, कदम लॉन्स के पास, नाशिक रोड, नाशिक - 422101',
@@ -775,8 +796,12 @@ export const messages = {
       badge: 'पीएम सूर्य घर पंजीकृत विक्रेता',
       titlePrefix: 'अपने घर को दें',
       titleHighlight: 'स्वच्छ सौर ऊर्जा',
-      subtitle:
-        'रूफटॉप सोलर से बिजली बिल में 90% तक बचत — ₹78,000 तक सरकारी सब्सिडी, 6.4% ब्याज पर बैंक लोन और नाशिक में मुफ्त साइट विजिट.',
+      subtitle: [
+        'रूफटॉप सोलर से बिजली बिल में 90% तक बचत',
+        '₹78,000 तक सरकारी सब्सिडी',
+        'सरकारी/राष्ट्रीयकृत बैंकों से 6.5% ब्याज दर पर लोन',
+        'नाशिक में मुफ्त साइट विजिट और मार्गदर्शन',
+      ],
       calculate: 'बचत कैलकुलेट करें',
       expert: 'विशेषज्ञ से बात करें',
       trust: ['मुफ्त साइट विजिट', '₹78,000 तक सब्सिडी', '25 साल की परफॉर्मेंस वारंटी'],
@@ -821,13 +846,13 @@ export const messages = {
       brandsTitle: 'अग्रणी ब्रांडों के पैनल व उपकरण',
     },
     stats: {
-      values: ['₹78,000', '25 साल', '3–4 साल', '6.4%'],
+      values: ['₹78,000', '25 साल', '3–4 साल', '6.5%'],
       labels: ['अधिकतम केंद्रीय सब्सिडी', 'परफॉर्मेंस वारंटी', 'निवेश वसूली अवधि', 'बैंक लोन ब्याज दर'],
     },
     why: {
       titles: [
         '₹78,000 तक सब्सिडी',
-        '6.4% ब्याज पर बैंक लोन',
+        '6.5% ब्याज पर बैंक लोन',
         'MSEB नियमों के अनुसार इंस्टॉलेशन',
         '25 साल की परफॉर्मेंस वारंटी',
         '3–4 साल में वसूली',
@@ -837,7 +862,7 @@ export const messages = {
       ],
       descriptions: [
         'पीएम सूर्य घर योजना के तहत ₹78,000 तक सरकारी सब्सिडी, पूरी आवेदन प्रक्रिया में सहायता.',
-        'राष्ट्रीयकृत बैंकों से 6.4% ब्याज दर पर सोलर लोन — आवेदन में हमारी सहायता.',
+        'राष्ट्रीयकृत बैंकों से 6.5% ब्याज दर पर सोलर लोन — आवेदन में हमारी सहायता.',
         'MSEB/MSEDCL नियमों के अनुसार इंस्टॉलेशन और पूरी नेट मीटरिंग सहायता.',
         'टियर-1 पैनलों के साथ 25 साल तक की परफॉर्मेंस वारंटी.',
         'बिजली बिल की बचत से सिर्फ 3–4 साल में निवेश वसूल करें.',
@@ -871,8 +896,10 @@ export const messages = {
     subsidy: {
       heroTitle: 'नाशिक में सोलर सब्सिडी सहायता',
       // DEADLINE: पीएम सूर्य घर योजना की अंतिम तिथि — योजना समाप्त होने पर अपडेट/हटाएं.
-      heroSubtitle:
-        'पीएम सूर्य घर योजना 31 मार्च 2027 को बंद हो रही है — बिना कागजी झंझट अधिकतम लाभ के लिए पूरी सब्सिडी आवेदन प्रक्रिया हम संभालते हैं.',
+      heroSubtitle: [
+        'पीएम सूर्य घर योजना 31 मार्च 2027 को बंद हो रही है — अधिकतम सब्सिडी पाने के लिए अभी पंजीकरण करें.',
+        'हम ग्राहक की ओर से पीएम पोर्टल पंजीकरण, सब्सिडी प्रक्रिया और सरकारी बैंक ऋण आवेदन प्रक्रिया पूरी करते हैं.',
+      ],
       eyebrow: 'पीएम सूर्य घर मुफ्त बिजली योजना',
       title: '₹78,000 तक केंद्रीय सब्सिडी पाएं',
       subtitle: '3 किलोवाट तक के घरेलू रूफटॉप सोलर सिस्टम पीएम सूर्य घर योजना के तहत सब्सिडी के पात्र हैं.',
@@ -894,8 +921,8 @@ export const messages = {
         'अधिकतम केंद्रीय सब्सिडी के लिए 3 किलोवाट तक सिस्टम लगाने की इच्छा',
         'वैध पहचान और संपत्ति स्वामित्व दस्तावेज',
       ],
-      loanTitle: '6.4% ब्याज पर सोलर लोन',
-      loanDesc: 'राष्ट्रीयकृत बैंक 6.4% ब्याज दर पर सोलर लोन देते हैं — पूरे लोन आवेदन में हमारी टीम सहायता करती है.',
+      loanTitle: '6.5% ब्याज पर सोलर लोन',
+      loanDesc: 'राष्ट्रीयकृत बैंक 6.5% ब्याज दर पर सोलर लोन देते हैं — पूरे लोन आवेदन में हमारी टीम सहायता करती है.',
       processEyebrow: 'आवेदन प्रक्रिया',
       processTitle: 'हम आपका सब्सिडी आवेदन कैसे संभालते हैं',
       stepTitles: ['पंजीकरण', 'दस्तावेज', 'इंस्टॉलेशन व निरीक्षण', 'राशि वितरण'],

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CommonPageHero :title="t('subsidy.heroTitle')" :subtitle="t('subsidy.heroSubtitle')" />
+    <CommonPageHero :title="t('subsidy.heroTitle')" :subtitle-points="subsidyHeroSubtitlePoints" />
 
     <HomeSubsidyDeadlineBanner />
 
@@ -114,6 +114,8 @@
 <script setup lang="ts">
 const { t, tm } = useI18n()
 const localePath = useLocalePath()
+
+const subsidyHeroSubtitlePoints = computed(() => tm('subsidy.heroSubtitle') as string[])
 
 const subsidyAmounts = ['₹30,000', '₹60,000', '₹78,000']
 const subsidySlabs = computed(() => {
