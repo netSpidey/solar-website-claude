@@ -13,9 +13,9 @@
             <span class="text-gradient-solar">{{ t('hero.titleHighlight') }}</span>
           </h1>
 
-          <p class="hero__subtitle mt-5">
-            {{ t('hero.subtitle') }}
-          </p>
+          <ul class="hero__subtitle mt-5">
+            <li v-for="(point, index) in subtitlePoints" :key="index">{{ point }}</li>
+          </ul>
 
           <div class="d-flex flex-wrap ga-3 mt-8">
             <v-btn
@@ -65,6 +65,7 @@ const heroStyle = {
 }
 
 const trustPoints = computed(() => tm('hero.trust') as string[])
+const subtitlePoints = computed(() => tm('hero.subtitle') as string[])
 </script>
 
 <style scoped lang="scss">
@@ -112,10 +113,33 @@ const trustPoints = computed(() => tm('hero.trust') as string[])
 }
 
 .hero__subtitle {
-  color: var(--text-on-dark-muted);
-  font-size: 1.08rem;
-  line-height: 1.7;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   max-width: 560px;
+
+  li {
+    position: relative;
+    padding-left: 26px;
+    color: var(--text-on-dark-muted);
+    font-size: 1.08rem;
+    line-height: 1.6;
+
+    & + li {
+      margin-top: 8px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-amber);
+    }
+  }
 }
 
 .hero__trust {

@@ -10,7 +10,10 @@
       <NuxtLink :to="localePath('/')" class="d-flex align-center text-decoration-none mr-4 flex-shrink-0">
         <img src="/assets/images/logo1.png" :alt="`${companyInfo.name} logo`" height="52" width="52" />
         <div class="ml-2 d-none d-sm-block brand-lines">
-          <div class="brand-lines__primary">{{ t('company.brandLine1') }}</div>
+          <div class="brand-lines__primary">
+            <span class="brand-lines__s">{{ t('company.brandS') }}</span>.<span class="brand-lines__p">{{ t('company.brandP') }}</span>.
+            <span class="brand-lines__enterprises">{{ t('company.brandEnterprises') }}</span>
+          </div>
           <div class="brand-lines__secondary">{{ t('company.brandLine2') }}</div>
         </div>
       </NuxtLink>
@@ -131,7 +134,10 @@
     <div class="pa-4 d-flex align-center">
       <img src="/assets/images/logo1.png" :alt="`${companyInfo.name} logo`" height="44" width="44" />
       <div class="ml-2 brand-lines">
-        <div class="brand-lines__primary text-body-2">{{ t('company.brandLine1') }}</div>
+        <div class="brand-lines__primary text-body-2">
+          <span class="brand-lines__s">{{ t('company.brandS') }}</span>.<span class="brand-lines__p">{{ t('company.brandP') }}</span>.
+          <span class="brand-lines__enterprises">{{ t('company.brandEnterprises') }}</span>
+        </div>
         <div class="brand-lines__secondary text-caption">{{ t('company.brandLine2') }}</div>
       </div>
     </div>
@@ -254,10 +260,22 @@ onBeforeUnmount(() => {
   line-height: 1.15;
 
   &__primary {
-    color: var(--color-navy);
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 1rem;
+    color: var(--color-navy); // separators (the dots) between the letters
+  }
+
+  &__s {
+    color: var(--color-blue);
+  }
+
+  &__p {
+    color: var(--color-green);
+  }
+
+  &__enterprises {
+    color: var(--color-orange);
   }
 
   &__secondary {

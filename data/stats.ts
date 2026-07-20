@@ -6,7 +6,7 @@ export const trustStats: TrustStat[] = [
   { label: 'Max Central Subsidy', value: '₹78,000', icon: 'mdi-cash-multiple' },
   { label: 'Performance Warranty', value: '25 Years', icon: 'mdi-shield-check-outline' },
   { label: 'Typical Payback', value: '3–4 Years', icon: 'mdi-chart-line' },
-  { label: 'Bank Loan Interest', value: '6.4%', icon: 'mdi-bank-outline' },
+  { label: 'Bank Loan Interest', value: '6.5%', icon: 'mdi-bank-outline' },
 ]
 
 // The 8 USPs from the S.P. Enterprises flyer. Titles/descriptions are localized by index
@@ -19,8 +19,8 @@ export const whyChooseUs: WhyChooseUsItem[] = [
     image: '/assets/images/why/subsidy-inr.jpg',
   },
   {
-    title: 'Bank Loans at 6.4%',
-    description: 'Nationalised-bank solar loans at 6.4% interest — we assist with the application.',
+    title: 'Bank Loans at 6.5%',
+    description: 'Nationalised-bank solar loans at 6.5% interest — we assist with the application.',
     icon: 'mdi-bank-outline',
     image: '/assets/images/why/bank-loan.jpg',
   },

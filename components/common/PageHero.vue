@@ -9,7 +9,12 @@
       <h1 class="text-h3 text-md-h2 font-weight-bold text-white" style="max-width: 780px">
         {{ title }}
       </h1>
-      <p v-if="subtitle" class="text-body-1 text-md-h6 font-weight-regular text-white opacity-80 mt-4" style="max-width: 640px">
+      <ul v-if="subtitlePoints?.length" class="page-hero__subtitle-list mt-4" style="max-width: 640px">
+        <li v-for="(point, index) in subtitlePoints" :key="index" class="text-body-1 text-md-h6 font-weight-regular text-white opacity-80">
+          {{ point }}
+        </li>
+      </ul>
+      <p v-else-if="subtitle" class="text-body-1 text-md-h6 font-weight-regular text-white opacity-80 mt-4" style="max-width: 640px">
         {{ subtitle }}
       </p>
     </v-container>
@@ -20,6 +25,7 @@
 const props = defineProps<{
   title: string
   subtitle?: string
+  subtitlePoints?: string[]
 }>()
 
 const breadcrumbs = computed(() => [
@@ -41,6 +47,32 @@ const localePath = useLocalePath()
   &__breadcrumbs :deep(.v-breadcrumbs-item--disabled) {
     color: #FFC107;
     opacity: 1;
+  }
+
+  &__subtitle-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: relative;
+      padding-left: 26px;
+
+      & + li {
+        margin-top: 6px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.6em;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--color-amber);
+      }
+    }
   }
 }
 </style>
